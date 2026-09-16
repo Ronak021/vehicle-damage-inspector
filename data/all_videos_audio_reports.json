@@ -1,0 +1,392 @@
+{
+  "claim_single_dent_v1.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 8.06,
+      "pitch_mean_hz": 96.1,
+      "pitch_std_hz": 12.9,
+      "onset_rate_per_sec": 5.09,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0535,
+      "rms_std": 0.0271,
+      "zcr_std": 0.0939
+    },
+    "acoustic_stress_score": 36.3,
+    "transcribed_text": null
+  },
+  "claim_single_dent_v2.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.83,
+      "pitch_mean_hz": 97.0,
+      "pitch_std_hz": 12.6,
+      "onset_rate_per_sec": 5.24,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0543,
+      "rms_std": 0.0274,
+      "zcr_std": 0.092
+    },
+    "acoustic_stress_score": 38.2,
+    "transcribed_text": null
+  },
+  "claim_single_scratch_v1.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 8.89,
+      "pitch_mean_hz": 104.5,
+      "pitch_std_hz": 9.4,
+      "onset_rate_per_sec": 5.17,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0502,
+      "rms_std": 0.0373,
+      "zcr_std": 0.0957
+    },
+    "acoustic_stress_score": 37.5,
+    "transcribed_text": null
+  },
+  "claim_single_scratch_v2.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 8.71,
+      "pitch_mean_hz": 101.3,
+      "pitch_std_hz": 9.2,
+      "onset_rate_per_sec": 5.63,
+      "pause_ratio": 0.199,
+      "rms_mean": 0.0484,
+      "rms_std": 0.0386,
+      "zcr_std": 0.0869
+    },
+    "acoustic_stress_score": 40.0,
+    "transcribed_text": null
+  },
+  "claim_single_crack_v1.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 8.93,
+      "pitch_mean_hz": 96.1,
+      "pitch_std_hz": 13.1,
+      "onset_rate_per_sec": 6.27,
+      "pause_ratio": 0.2,
+      "rms_mean": 0.0493,
+      "rms_std": 0.0298,
+      "zcr_std": 0.0828
+    },
+    "acoustic_stress_score": 61.1,
+    "transcribed_text": null
+  },
+  "claim_single_crack_v2.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 8.98,
+      "pitch_mean_hz": 100.7,
+      "pitch_std_hz": 9.1,
+      "onset_rate_per_sec": 5.57,
+      "pause_ratio": 0.202,
+      "rms_mean": 0.0508,
+      "rms_std": 0.0385,
+      "zcr_std": 0.0832
+    },
+    "acoustic_stress_score": 47.4,
+    "transcribed_text": null
+  },
+  "claim_single_glass_shatter_v1.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 7.3,
+      "pitch_mean_hz": 103.5,
+      "pitch_std_hz": 8.8,
+      "onset_rate_per_sec": 5.07,
+      "pause_ratio": 0.2,
+      "rms_mean": 0.0491,
+      "rms_std": 0.0374,
+      "zcr_std": 0.1314
+    },
+    "acoustic_stress_score": 36.1,
+    "transcribed_text": null
+  },
+  "claim_single_glass_shatter_v2.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.67,
+      "pitch_mean_hz": 99.0,
+      "pitch_std_hz": 11.2,
+      "onset_rate_per_sec": 6.65,
+      "pause_ratio": 0.199,
+      "rms_mean": 0.0532,
+      "rms_std": 0.0286,
+      "zcr_std": 0.0922
+    },
+    "acoustic_stress_score": 56.3,
+    "transcribed_text": null
+  },
+  "claim_single_lamp_broken_v1.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.07,
+      "pitch_mean_hz": 99.8,
+      "pitch_std_hz": 8.0,
+      "onset_rate_per_sec": 6.65,
+      "pause_ratio": 0.2,
+      "rms_mean": 0.0531,
+      "rms_std": 0.0278,
+      "zcr_std": 0.109
+    },
+    "acoustic_stress_score": 45.9,
+    "transcribed_text": null
+  },
+  "claim_single_lamp_broken_v2.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 9.0,
+      "pitch_mean_hz": 104.2,
+      "pitch_std_hz": 9.8,
+      "onset_rate_per_sec": 5.78,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0495,
+      "rms_std": 0.0373,
+      "zcr_std": 0.0969
+    },
+    "acoustic_stress_score": 52.6,
+    "transcribed_text": null
+  },
+  "claim_single_tire_flat_v1.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 8.07,
+      "pitch_mean_hz": 97.2,
+      "pitch_std_hz": 12.2,
+      "onset_rate_per_sec": 6.57,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0509,
+      "rms_std": 0.0292,
+      "zcr_std": 0.082
+    },
+    "acoustic_stress_score": 65.2,
+    "transcribed_text": null
+  },
+  "claim_single_tire_flat_v2.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.13,
+      "pitch_mean_hz": 98.2,
+      "pitch_std_hz": 12.2,
+      "onset_rate_per_sec": 5.61,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.056,
+      "rms_std": 0.0267,
+      "zcr_std": 0.0878
+    },
+    "acoustic_stress_score": 42.1,
+    "transcribed_text": null
+  },
+  "claim_pair_dent_scratch.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 6.9,
+      "pitch_mean_hz": 99.7,
+      "pitch_std_hz": 11.1,
+      "onset_rate_per_sec": 6.53,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0515,
+      "rms_std": 0.0304,
+      "zcr_std": 0.085
+    },
+    "acoustic_stress_score": 61.5,
+    "transcribed_text": null
+  },
+  "claim_pair_crack_glass_shatter.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.5,
+      "pitch_mean_hz": 99.2,
+      "pitch_std_hz": 11.6,
+      "onset_rate_per_sec": 5.87,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0541,
+      "rms_std": 0.0276,
+      "zcr_std": 0.0955
+    },
+    "acoustic_stress_score": 47.5,
+    "transcribed_text": null
+  },
+  "claim_pair_scratch_crack.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 7.52,
+      "pitch_mean_hz": 104.2,
+      "pitch_std_hz": 9.6,
+      "onset_rate_per_sec": 5.98,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.052,
+      "rms_std": 0.0367,
+      "zcr_std": 0.093
+    },
+    "acoustic_stress_score": 54.1,
+    "transcribed_text": null
+  },
+  "claim_pair_dent_tire_flat.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 6.59,
+      "pitch_mean_hz": 104.0,
+      "pitch_std_hz": 9.6,
+      "onset_rate_per_sec": 6.22,
+      "pause_ratio": 0.2,
+      "rms_mean": 0.0496,
+      "rms_std": 0.0383,
+      "zcr_std": 0.1066
+    },
+    "acoustic_stress_score": 61.0,
+    "transcribed_text": null
+  },
+  "claim_pair_lamp_broken_scratch.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 7.34,
+      "pitch_mean_hz": 103.1,
+      "pitch_std_hz": 9.9,
+      "onset_rate_per_sec": 6.27,
+      "pause_ratio": 0.202,
+      "rms_mean": 0.0485,
+      "rms_std": 0.038,
+      "zcr_std": 0.1052
+    },
+    "acoustic_stress_score": 69.4,
+    "transcribed_text": null
+  },
+  "claim_pair_dent_crack.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.5,
+      "pitch_mean_hz": 100.4,
+      "pitch_std_hz": 11.4,
+      "onset_rate_per_sec": 6.27,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0509,
+      "rms_std": 0.0304,
+      "zcr_std": 0.0836
+    },
+    "acoustic_stress_score": 57.2,
+    "transcribed_text": null
+  },
+  "claim_mixed_1.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 9.38,
+      "pitch_mean_hz": 100.4,
+      "pitch_std_hz": 8.8,
+      "onset_rate_per_sec": 5.86,
+      "pause_ratio": 0.2,
+      "rms_mean": 0.0513,
+      "rms_std": 0.0392,
+      "zcr_std": 0.083
+    },
+    "acoustic_stress_score": 46.4,
+    "transcribed_text": null
+  },
+  "claim_mixed_2.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 9.03,
+      "pitch_mean_hz": 96.5,
+      "pitch_std_hz": 13.1,
+      "onset_rate_per_sec": 6.2,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0551,
+      "rms_std": 0.0276,
+      "zcr_std": 0.0914
+    },
+    "acoustic_stress_score": 61.1,
+    "transcribed_text": null
+  },
+  "claim_mixed_3.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.48,
+      "pitch_mean_hz": 97.3,
+      "pitch_std_hz": 12.4,
+      "onset_rate_per_sec": 5.35,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0544,
+      "rms_std": 0.0275,
+      "zcr_std": 0.0928
+    },
+    "acoustic_stress_score": 39.8,
+    "transcribed_text": null
+  },
+  "claim_mixed_4.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 8.06,
+      "pitch_mean_hz": 96.1,
+      "pitch_std_hz": 12.9,
+      "onset_rate_per_sec": 5.09,
+      "pause_ratio": 0.201,
+      "rms_mean": 0.0535,
+      "rms_std": 0.0271,
+      "zcr_std": 0.0939
+    },
+    "acoustic_stress_score": 36.3,
+    "transcribed_text": null
+  },
+  "claim_mixed_5.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 8.82,
+      "pitch_mean_hz": 101.4,
+      "pitch_std_hz": 8.7,
+      "onset_rate_per_sec": 4.99,
+      "pause_ratio": 0.199,
+      "rms_mean": 0.0475,
+      "rms_std": 0.0375,
+      "zcr_std": 0.0954
+    },
+    "acoustic_stress_score": 23.9,
+    "transcribed_text": null
+  },
+  "claim_mixed_6.mp4": {
+    "narration_style_ground_truth": "distressed",
+    "acoustic_features": {
+      "duration_sec": 7.3,
+      "pitch_mean_hz": 100.3,
+      "pitch_std_hz": 9.5,
+      "onset_rate_per_sec": 5.62,
+      "pause_ratio": 0.2,
+      "rms_mean": 0.0547,
+      "rms_std": 0.0274,
+      "zcr_std": 0.1134
+    },
+    "acoustic_stress_score": 31.7,
+    "transcribed_text": null
+  },
+  "claim_edge_long_walkaround.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 10.21,
+      "pitch_mean_hz": 100.9,
+      "pitch_std_hz": 8.9,
+      "onset_rate_per_sec": 5.78,
+      "pause_ratio": 0.2,
+      "rms_mean": 0.0488,
+      "rms_std": 0.038,
+      "zcr_std": 0.0785
+    },
+    "acoustic_stress_score": 42.5,
+    "transcribed_text": null
+  },
+  "claim_edge_single_image.mp4": {
+    "narration_style_ground_truth": "calm",
+    "acoustic_features": {
+      "duration_sec": 3.83,
+      "pitch_mean_hz": 101.3,
+      "pitch_std_hz": 9.8,
+      "onset_rate_per_sec": 6.53,
+      "pause_ratio": 0.199,
+      "rms_mean": 0.0531,
+      "rms_std": 0.0392,
+      "zcr_std": 0.0964
+    },
+    "acoustic_stress_score": 64.7,
+    "transcribed_text": null
+  }
+}

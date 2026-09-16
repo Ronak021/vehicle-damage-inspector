@@ -1,0 +1,272 @@
+!pip install ultralytics
+# --- CELL ---
+
+# pip install ultralytics opencv-python moviepy --quiet   # run once if not already installed
+
+import cv2
+import os
+import json
+import numpy as np
+import matplotlib.pyplot as plt
+from ultralytics import YOLO
+from pathlib import Path
+from collections import defaultdict
+
+MODEL_PATH = '/kaggle/input/notebooks/ronak038/2-icc-yolov8s/car_damage_best.pt'  # <-- adjust if your path differs
+CLASS_NAMES = ['dent', 'scratch', 'crack', 'glass shatter', 'lamp broken', 'tire flat']
+
+model = YOLO(MODEL_PATH)
+print('Model loaded from:', MODEL_PATH)
+print('Classes:', model.names)
+# --- CELL ---
+
+def extract_frames_fixed_interval(video_path, every_n_frames=15):
+    """Grab one frame every `every_n_frames` frames."""
+    cap = cv2.VideoCapture(video_path)
+    frames = []
+    frame_idx = 0
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+        if frame_idx % every_n_frames == 0:
+            timestamp_sec = frame_idx / fps
+            frames.append({'frame': frame, 'frame_idx': frame_idx, 'timestamp_sec': round(timestamp_sec, 2)})
+        frame_idx += 1
+
+    cap.release()
+    return frames
+
+
+def extract_frames_scene_change(video_path, diff_threshold=25.0, min_gap_frames=5):
+    """Grab frames where visual content changes meaningfully vs. the last captured frame.
+    Uses mean absolute pixel difference on grayscale downsized frames — cheap and effective.
+    """
+    cap = cv2.VideoCapture(video_path)
+    frames = []
+    frame_idx = 0
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30
+    prev_gray_small = None
+    last_captured_idx = -min_gap_frames
+
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        small = cv2.resize(frame, (160, 90))
+        gray_small = cv2.cvtColor(small, cv2.COLOR_BGR2GRAY)
+
+        should_capture = False
+        if prev_gray_small is None:
+            should_capture = True  # always take the first frame
+        else:
+            diff = np.mean(cv2.absdiff(gray_small, prev_gray_small))
+            if diff > diff_threshold and (frame_idx - last_captured_idx) >= min_gap_frames:
+                should_capture = True
+
+        if should_capture:
+            timestamp_sec = frame_idx / fps
+            frames.append({'frame': frame, 'frame_idx': frame_idx, 'timestamp_sec': round(timestamp_sec, 2)})
+            prev_gray_small = gray_small
+            last_captured_idx = frame_idx
+
+        frame_idx += 1
+
+    cap.release()
+    return frames
+# --- CELL ---
+
+SAMPLE_VIDEO_PATH = '/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_edge_long_walkaround.mp4'  # <-- point this at one of your test videos
+
+fixed_frames = extract_frames_fixed_interval(SAMPLE_VIDEO_PATH, every_n_frames=15)
+scene_frames = extract_frames_scene_change(SAMPLE_VIDEO_PATH, diff_threshold=25.0)
+
+print(f'Fixed-interval sampling: {len(fixed_frames)} frames extracted')
+print(f'Scene-change sampling:   {len(scene_frames)} frames extracted')
+# --- CELL ---
+
+def run_detection_on_frames(frames, model, conf_threshold=0.20):
+    """Run YOLO on each sampled frame. Returns per-frame detection results.
+    conf_threshold=0.20 chosen from the threshold-tuning step in the fine-tuning notebook
+    (prioritizing recall — better to flag borderline damage for human review than miss it).
+    """
+    per_frame_results = []
+
+    for f in frames:
+        result = model.predict(f['frame'], conf=conf_threshold, verbose=False)[0]
+
+        detections = []
+        for box in result.boxes:
+            cls_id = int(box.cls.item())
+            detections.append({
+                'class': CLASS_NAMES[cls_id],
+                'confidence': round(float(box.conf.item()), 3),
+                'bbox_xyxy': [round(x, 1) for x in box.xyxy[0].tolist()]
+            })
+
+        per_frame_results.append({
+            'frame_idx': f['frame_idx'],
+            'timestamp_sec': f['timestamp_sec'],
+            'detections': detections,
+            'annotated_frame': result.plot()  # for visualization only, not saved to JSON
+        })
+
+    return per_frame_results
+
+
+fixed_detections = run_detection_on_frames(fixed_frames, model)
+scene_detections = run_detection_on_frames(scene_frames, model)
+
+fixed_total_detections = sum(len(f['detections']) for f in fixed_detections)
+scene_total_detections = sum(len(f['detections']) for f in scene_detections)
+
+print(f'Fixed-interval: {len(fixed_frames)} frames → {fixed_total_detections} total detections')
+print(f'Scene-change:   {len(scene_frames)} frames → {scene_total_detections} total detections')
+# --- CELL ---
+
+CHOSEN_DETECTIONS = scene_detections  # switch to fixed_detections if that strategy wins
+
+frames_with_damage = [f for f in CHOSEN_DETECTIONS if len(f['detections']) > 0]
+
+n_show = min(4, len(frames_with_damage))
+if n_show == 0:
+    print('No damage detected in any sampled frame — try lowering conf_threshold or check the video.')
+else:
+    fig, axes = plt.subplots(1, n_show, figsize=(6 * n_show, 6))
+    if n_show == 1:
+        axes = [axes]
+    for ax, f in zip(axes, frames_with_damage[:n_show]):
+        ax.imshow(cv2.cvtColor(f['annotated_frame'], cv2.COLOR_BGR2RGB))
+        ax.set_title(f"t={f['timestamp_sec']}s | {len(f['detections'])} detection(s)")
+        ax.axis('off')
+    plt.tight_layout()
+    plt.show()
+# --- CELL ---
+
+def aggregate_video_damage_report(per_frame_results, total_sampled_frames):
+    """Combine per-frame detections into a claim-level summary."""
+    class_stats = defaultdict(lambda: {
+        'frame_count': 0,
+        'max_confidence': 0.0,
+        'best_timestamp_sec': None,
+        'confidences': []
+    })
+
+    for frame_result in per_frame_results:
+        seen_classes_this_frame = set()
+        for det in frame_result['detections']:
+            cls = det['class']
+            conf = det['confidence']
+            stats = class_stats[cls]
+            stats['confidences'].append(conf)
+            if cls not in seen_classes_this_frame:
+                stats['frame_count'] += 1
+                seen_classes_this_frame.add(cls)
+            if conf > stats['max_confidence']:
+                stats['max_confidence'] = conf
+                stats['best_timestamp_sec'] = frame_result['timestamp_sec']
+
+    damage_summary = []
+    for cls, stats in class_stats.items():
+        damage_summary.append({
+            'damage_type': cls,
+            'frames_detected_in': stats['frame_count'],
+            'frame_consistency_pct': round(100 * stats['frame_count'] / total_sampled_frames, 1),
+            'max_confidence': round(stats['max_confidence'], 3),
+            'avg_confidence': round(float(np.mean(stats['confidences'])), 3),
+            'best_timestamp_sec': stats['best_timestamp_sec']
+        })
+
+    # Sort by max confidence, most severe/certain damage first
+    damage_summary.sort(key=lambda x: x['max_confidence'], reverse=True)
+
+    return {
+        'total_sampled_frames': total_sampled_frames,
+        'frames_with_any_damage': sum(1 for f in per_frame_results if len(f['detections']) > 0),
+        'damage_types_found': [d['damage_type'] for d in damage_summary],
+        'damage_summary': damage_summary
+    }
+
+
+video_report = aggregate_video_damage_report(CHOSEN_DETECTIONS, len(CHOSEN_DETECTIONS))
+print(json.dumps(video_report, indent=2))
+# --- CELL ---
+
+# Optional: rank damage types by rough severity for weighting (documented assumption)
+SEVERITY_WEIGHTS = {
+    'crack': 1.0,
+    'glass shatter': 1.0,
+    'dent': 0.7,
+    'lamp broken': 0.7,
+    'tire flat': 0.9,
+    'scratch': 0.4
+}
+
+def compute_visual_damage_score(damage_summary):
+    if not damage_summary:
+        return 0.0
+
+    per_type_scores = []
+    for d in damage_summary:
+        weight = SEVERITY_WEIGHTS.get(d['damage_type'], 0.5)
+        consistency_factor = d['frame_consistency_pct'] / 100
+        type_score = weight * d['max_confidence'] * (0.5 + 0.5 * consistency_factor)
+        per_type_scores.append(type_score)
+
+    # Combine: take the max (worst single damage) plus a smaller contribution from
+    # additional damage types, capped at 100
+    per_type_scores.sort(reverse=True)
+    combined = per_type_scores[0] + 0.3 * sum(per_type_scores[1:])
+    score_0_100 = min(round(combined * 100, 1), 100.0)
+    return score_0_100
+
+
+visual_damage_score = compute_visual_damage_score(video_report['damage_summary'])
+video_report['visual_damage_score'] = visual_damage_score
+print(f"Visual Damage Score: {visual_damage_score} / 100")
+# --- CELL ---
+
+os.makedirs('reports', exist_ok=True)
+video_name = Path(SAMPLE_VIDEO_PATH).stem
+output_path = f'reports/{video_name}_visual_report.json'
+
+with open(output_path, 'w') as f:
+    json.dump(video_report, f, indent=2)
+
+print(f'Saved visual damage report to: {output_path}')
+# --- CELL ---
+
+def process_video_end_to_end(video_path, model, sampling='scene_change', conf_threshold=0.20):
+    if sampling == 'scene_change':
+        frames = extract_frames_scene_change(video_path)
+    else:
+        frames = extract_frames_fixed_interval(video_path)
+
+    detections = run_detection_on_frames(frames, model, conf_threshold=conf_threshold)
+    report = aggregate_video_damage_report(detections, len(detections))
+    report['visual_damage_score'] = compute_visual_damage_score(report['damage_summary'])
+    report['video_path'] = video_path
+    return report
+
+
+SAMPLE_VIDEOS_DIR = '/kaggle/input/datasets/ronak038/sample-videos-with-audios'
+all_reports = {}
+
+for video_file in os.listdir(SAMPLE_VIDEOS_DIR):
+    if video_file.lower().endswith(('.mp4', '.mov', '.avi')):
+        path = os.path.join(SAMPLE_VIDEOS_DIR, video_file)
+        print(f'Processing {video_file}...')
+        all_reports[video_file] = process_video_end_to_end(path, model)
+
+with open('reports/all_videos_visual_reports.json', 'w') as f:
+    json.dump(all_reports, f, indent=2)
+
+print(f'\nProcessed {len(all_reports)} videos. Combined report saved to reports/all_videos_visual_reports.json')
+
+for name, r in all_reports.items():
+    print(f"  {name}: score={r['visual_damage_score']}, types={r['damage_types_found']}")
+# --- CELL ---
+

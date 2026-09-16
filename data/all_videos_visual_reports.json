@@ -1,0 +1,1063 @@
+{
+  "claim_mixed_4.mp4": {
+    "total_sampled_frames": 14,
+    "frames_with_any_damage": 14,
+    "damage_types_found": [
+      "dent",
+      "lamp broken",
+      "scratch",
+      "crack"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 7,
+        "frame_consistency_pct": 50.0,
+        "max_confidence": 0.934,
+        "avg_confidence": 0.638,
+        "best_timestamp_sec": 7.6
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 9,
+        "frame_consistency_pct": 64.3,
+        "max_confidence": 0.917,
+        "avg_confidence": 0.833,
+        "best_timestamp_sec": 2.43
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 7,
+        "frame_consistency_pct": 50.0,
+        "max_confidence": 0.885,
+        "avg_confidence": 0.608,
+        "best_timestamp_sec": 2.43
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 1,
+        "frame_consistency_pct": 7.1,
+        "max_confidence": 0.364,
+        "avg_confidence": 0.34,
+        "best_timestamp_sec": 2.6
+      }
+    ],
+    "visual_damage_score": 81.3,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_4.mp4"
+  },
+  "claim_single_scratch_v1.mp4": {
+    "total_sampled_frames": 7,
+    "frames_with_any_damage": 7,
+    "damage_types_found": [
+      "lamp broken",
+      "scratch",
+      "crack",
+      "dent"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 5,
+        "frame_consistency_pct": 71.4,
+        "max_confidence": 0.957,
+        "avg_confidence": 0.779,
+        "best_timestamp_sec": 6.0
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 7,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.856,
+        "avg_confidence": 0.559,
+        "best_timestamp_sec": 6.0
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 4,
+        "frame_consistency_pct": 57.1,
+        "max_confidence": 0.525,
+        "avg_confidence": 0.397,
+        "best_timestamp_sec": 3.0
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 2,
+        "frame_consistency_pct": 28.6,
+        "max_confidence": 0.47,
+        "avg_confidence": 0.378,
+        "best_timestamp_sec": 1.93
+      }
+    ],
+    "visual_damage_score": 86.4,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_scratch_v1.mp4"
+  },
+  "claim_single_tire_flat_v1.mp4": {
+    "total_sampled_frames": 18,
+    "frames_with_any_damage": 18,
+    "damage_types_found": [
+      "tire flat",
+      "dent",
+      "scratch",
+      "lamp broken"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "tire flat",
+        "frames_detected_in": 10,
+        "frame_consistency_pct": 55.6,
+        "max_confidence": 0.967,
+        "avg_confidence": 0.838,
+        "best_timestamp_sec": 0.0
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 12,
+        "frame_consistency_pct": 66.7,
+        "max_confidence": 0.933,
+        "avg_confidence": 0.616,
+        "best_timestamp_sec": 4.73
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 8,
+        "frame_consistency_pct": 44.4,
+        "max_confidence": 0.771,
+        "avg_confidence": 0.508,
+        "best_timestamp_sec": 1.37
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 6,
+        "frame_consistency_pct": 33.3,
+        "max_confidence": 0.401,
+        "avg_confidence": 0.33,
+        "best_timestamp_sec": 6.0
+      }
+    ],
+    "visual_damage_score": 96.3,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_tire_flat_v1.mp4"
+  },
+  "claim_mixed_1.mp4": {
+    "total_sampled_frames": 23,
+    "frames_with_any_damage": 23,
+    "damage_types_found": [
+      "crack",
+      "lamp broken",
+      "dent",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 3,
+        "frame_consistency_pct": 13.0,
+        "max_confidence": 0.935,
+        "avg_confidence": 0.537,
+        "best_timestamp_sec": 9.23
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 12,
+        "frame_consistency_pct": 52.2,
+        "max_confidence": 0.934,
+        "avg_confidence": 0.817,
+        "best_timestamp_sec": 5.0
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 5,
+        "frame_consistency_pct": 21.7,
+        "max_confidence": 0.891,
+        "avg_confidence": 0.877,
+        "best_timestamp_sec": 4.8
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 14,
+        "frame_consistency_pct": 60.9,
+        "max_confidence": 0.845,
+        "avg_confidence": 0.614,
+        "best_timestamp_sec": 1.63
+      }
+    ],
+    "visual_damage_score": 87.3,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_1.mp4"
+  },
+  "claim_pair_crack_glass_shatter.mp4": {
+    "total_sampled_frames": 26,
+    "frames_with_any_damage": 26,
+    "damage_types_found": [
+      "glass shatter",
+      "crack",
+      "dent",
+      "scratch",
+      "lamp broken"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "glass shatter",
+        "frames_detected_in": 20,
+        "frame_consistency_pct": 76.9,
+        "max_confidence": 0.924,
+        "avg_confidence": 0.708,
+        "best_timestamp_sec": 6.93
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 18,
+        "frame_consistency_pct": 69.2,
+        "max_confidence": 0.921,
+        "avg_confidence": 0.525,
+        "best_timestamp_sec": 4.73
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 26,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.912,
+        "avg_confidence": 0.6,
+        "best_timestamp_sec": 4.57
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 13,
+        "frame_consistency_pct": 50.0,
+        "max_confidence": 0.83,
+        "avg_confidence": 0.489,
+        "best_timestamp_sec": 6.3
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 8,
+        "frame_consistency_pct": 30.8,
+        "max_confidence": 0.744,
+        "avg_confidence": 0.548,
+        "best_timestamp_sec": 0.3
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_crack_glass_shatter.mp4"
+  },
+  "claim_pair_scratch_crack.mp4": {
+    "total_sampled_frames": 18,
+    "frames_with_any_damage": 18,
+    "damage_types_found": [
+      "lamp broken",
+      "crack",
+      "dent",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 8,
+        "frame_consistency_pct": 44.4,
+        "max_confidence": 0.963,
+        "avg_confidence": 0.622,
+        "best_timestamp_sec": 4.53
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 14,
+        "frame_consistency_pct": 77.8,
+        "max_confidence": 0.932,
+        "avg_confidence": 0.686,
+        "best_timestamp_sec": 7.17
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 17,
+        "frame_consistency_pct": 94.4,
+        "max_confidence": 0.87,
+        "avg_confidence": 0.48,
+        "best_timestamp_sec": 5.23
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 15,
+        "frame_consistency_pct": 83.3,
+        "max_confidence": 0.858,
+        "avg_confidence": 0.51,
+        "best_timestamp_sec": 2.5
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_scratch_crack.mp4"
+  },
+  "claim_single_tire_flat_v2.mp4": {
+    "total_sampled_frames": 11,
+    "frames_with_any_damage": 11,
+    "damage_types_found": [
+      "tire flat"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "tire flat",
+        "frames_detected_in": 11,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.976,
+        "avg_confidence": 0.929,
+        "best_timestamp_sec": 2.6
+      }
+    ],
+    "visual_damage_score": 87.8,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_tire_flat_v2.mp4"
+  },
+  "claim_single_crack_v2.mp4": {
+    "total_sampled_frames": 9,
+    "frames_with_any_damage": 9,
+    "damage_types_found": [
+      "dent",
+      "scratch",
+      "crack",
+      "lamp broken"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 4,
+        "frame_consistency_pct": 44.4,
+        "max_confidence": 0.958,
+        "avg_confidence": 0.948,
+        "best_timestamp_sec": 6.73
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 7,
+        "frame_consistency_pct": 77.8,
+        "max_confidence": 0.896,
+        "avg_confidence": 0.526,
+        "best_timestamp_sec": 8.37
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 7,
+        "frame_consistency_pct": 77.8,
+        "max_confidence": 0.876,
+        "avg_confidence": 0.514,
+        "best_timestamp_sec": 4.37
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 4,
+        "frame_consistency_pct": 44.4,
+        "max_confidence": 0.791,
+        "avg_confidence": 0.68,
+        "best_timestamp_sec": 6.0
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_crack_v2.mp4"
+  },
+  "claim_mixed_2.mp4": {
+    "total_sampled_frames": 38,
+    "frames_with_any_damage": 38,
+    "damage_types_found": [
+      "glass shatter",
+      "dent",
+      "lamp broken",
+      "crack",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "glass shatter",
+        "frames_detected_in": 27,
+        "frame_consistency_pct": 71.1,
+        "max_confidence": 0.974,
+        "avg_confidence": 0.961,
+        "best_timestamp_sec": 1.33
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 11,
+        "frame_consistency_pct": 28.9,
+        "max_confidence": 0.917,
+        "avg_confidence": 0.869,
+        "best_timestamp_sec": 7.27
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 6,
+        "frame_consistency_pct": 15.8,
+        "max_confidence": 0.724,
+        "avg_confidence": 0.574,
+        "best_timestamp_sec": 8.2
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 2,
+        "frame_consistency_pct": 5.3,
+        "max_confidence": 0.588,
+        "avg_confidence": 0.423,
+        "best_timestamp_sec": 8.87
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 5,
+        "frame_consistency_pct": 13.2,
+        "max_confidence": 0.585,
+        "avg_confidence": 0.472,
+        "best_timestamp_sec": 7.1
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_2.mp4"
+  },
+  "claim_single_lamp_broken_v2.mp4": {
+    "total_sampled_frames": 26,
+    "frames_with_any_damage": 26,
+    "damage_types_found": [
+      "lamp broken",
+      "scratch",
+      "dent"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 23,
+        "frame_consistency_pct": 88.5,
+        "max_confidence": 0.953,
+        "avg_confidence": 0.873,
+        "best_timestamp_sec": 7.8
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 19,
+        "frame_consistency_pct": 73.1,
+        "max_confidence": 0.95,
+        "avg_confidence": 0.713,
+        "best_timestamp_sec": 6.0
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 14,
+        "frame_consistency_pct": 53.8,
+        "max_confidence": 0.839,
+        "avg_confidence": 0.445,
+        "best_timestamp_sec": 8.0
+      }
+    ],
+    "visual_damage_score": 86.3,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_lamp_broken_v2.mp4"
+  },
+  "claim_pair_lamp_broken_scratch.mp4": {
+    "total_sampled_frames": 14,
+    "frames_with_any_damage": 14,
+    "damage_types_found": [
+      "lamp broken",
+      "dent",
+      "crack",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 13,
+        "frame_consistency_pct": 92.9,
+        "max_confidence": 0.963,
+        "avg_confidence": 0.809,
+        "best_timestamp_sec": 6.5
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 12,
+        "frame_consistency_pct": 85.7,
+        "max_confidence": 0.911,
+        "avg_confidence": 0.559,
+        "best_timestamp_sec": 3.1
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 6,
+        "frame_consistency_pct": 42.9,
+        "max_confidence": 0.888,
+        "avg_confidence": 0.759,
+        "best_timestamp_sec": 5.0
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 14,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.866,
+        "avg_confidence": 0.531,
+        "best_timestamp_sec": 5.0
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_lamp_broken_scratch.mp4"
+  },
+  "claim_mixed_6.mp4": {
+    "total_sampled_frames": 16,
+    "frames_with_any_damage": 16,
+    "damage_types_found": [
+      "dent",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 16,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.868,
+        "avg_confidence": 0.548,
+        "best_timestamp_sec": 2.5
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 13,
+        "frame_consistency_pct": 81.2,
+        "max_confidence": 0.858,
+        "avg_confidence": 0.428,
+        "best_timestamp_sec": 7.07
+      }
+    ],
+    "visual_damage_score": 70.1,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_6.mp4"
+  },
+  "claim_single_dent_v2.mp4": {
+    "total_sampled_frames": 12,
+    "frames_with_any_damage": 12,
+    "damage_types_found": [
+      "dent",
+      "scratch",
+      "crack"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 12,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.856,
+        "avg_confidence": 0.424,
+        "best_timestamp_sec": 6.0
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 9,
+        "frame_consistency_pct": 75.0,
+        "max_confidence": 0.784,
+        "avg_confidence": 0.529,
+        "best_timestamp_sec": 1.4
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 2,
+        "frame_consistency_pct": 16.7,
+        "max_confidence": 0.542,
+        "avg_confidence": 0.498,
+        "best_timestamp_sec": 3.13
+      }
+    ],
+    "visual_damage_score": 77.6,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_dent_v2.mp4"
+  },
+  "claim_pair_dent_crack.mp4": {
+    "total_sampled_frames": 26,
+    "frames_with_any_damage": 26,
+    "damage_types_found": [
+      "crack",
+      "lamp broken",
+      "dent",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 22,
+        "frame_consistency_pct": 84.6,
+        "max_confidence": 0.94,
+        "avg_confidence": 0.662,
+        "best_timestamp_sec": 2.17
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 17,
+        "frame_consistency_pct": 65.4,
+        "max_confidence": 0.925,
+        "avg_confidence": 0.696,
+        "best_timestamp_sec": 3.9
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 22,
+        "frame_consistency_pct": 84.6,
+        "max_confidence": 0.86,
+        "avg_confidence": 0.505,
+        "best_timestamp_sec": 1.8
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 14,
+        "frame_consistency_pct": 53.8,
+        "max_confidence": 0.792,
+        "avg_confidence": 0.394,
+        "best_timestamp_sec": 0.23
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_dent_crack.mp4"
+  },
+  "claim_single_crack_v1.mp4": {
+    "total_sampled_frames": 10,
+    "frames_with_any_damage": 10,
+    "damage_types_found": [
+      "dent",
+      "crack",
+      "scratch",
+      "lamp broken"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 5,
+        "frame_consistency_pct": 50.0,
+        "max_confidence": 0.96,
+        "avg_confidence": 0.827,
+        "best_timestamp_sec": 0.77
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 10,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.897,
+        "avg_confidence": 0.584,
+        "best_timestamp_sec": 3.0
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 8,
+        "frame_consistency_pct": 80.0,
+        "max_confidence": 0.612,
+        "avg_confidence": 0.437,
+        "best_timestamp_sec": 6.63
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 3,
+        "frame_consistency_pct": 30.0,
+        "max_confidence": 0.355,
+        "avg_confidence": 0.279,
+        "best_timestamp_sec": 6.63
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_crack_v1.mp4"
+  },
+  "claim_single_scratch_v2.mp4": {
+    "total_sampled_frames": 9,
+    "frames_with_any_damage": 9,
+    "damage_types_found": [
+      "scratch",
+      "lamp broken",
+      "dent"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 9,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.931,
+        "avg_confidence": 0.45,
+        "best_timestamp_sec": 2.4
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 4,
+        "frame_consistency_pct": 44.4,
+        "max_confidence": 0.9,
+        "avg_confidence": 0.703,
+        "best_timestamp_sec": 8.8
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 3,
+        "frame_consistency_pct": 33.3,
+        "max_confidence": 0.839,
+        "avg_confidence": 0.762,
+        "best_timestamp_sec": 3.0
+      }
+    ],
+    "visual_damage_score": 68.4,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_scratch_v2.mp4"
+  },
+  "claim_mixed_5.mp4": {
+    "total_sampled_frames": 26,
+    "frames_with_any_damage": 26,
+    "damage_types_found": [
+      "glass shatter",
+      "scratch",
+      "crack"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "glass shatter",
+        "frames_detected_in": 20,
+        "frame_consistency_pct": 76.9,
+        "max_confidence": 0.969,
+        "avg_confidence": 0.933,
+        "best_timestamp_sec": 0.6
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 9,
+        "frame_consistency_pct": 34.6,
+        "max_confidence": 0.91,
+        "avg_confidence": 0.457,
+        "best_timestamp_sec": 4.13
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 3,
+        "frame_consistency_pct": 11.5,
+        "max_confidence": 0.6,
+        "avg_confidence": 0.382,
+        "best_timestamp_sec": 7.63
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_5.mp4"
+  },
+  "claim_edge_long_walkaround.mp4": {
+    "total_sampled_frames": 28,
+    "frames_with_any_damage": 27,
+    "damage_types_found": [
+      "lamp broken",
+      "tire flat",
+      "scratch",
+      "dent",
+      "crack"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 15,
+        "frame_consistency_pct": 53.6,
+        "max_confidence": 0.966,
+        "avg_confidence": 0.943,
+        "best_timestamp_sec": 5.93
+      },
+      {
+        "damage_type": "tire flat",
+        "frames_detected_in": 1,
+        "frame_consistency_pct": 3.6,
+        "max_confidence": 0.933,
+        "avg_confidence": 0.933,
+        "best_timestamp_sec": 10.0
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 19,
+        "frame_consistency_pct": 67.9,
+        "max_confidence": 0.931,
+        "avg_confidence": 0.711,
+        "best_timestamp_sec": 6.1
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 20,
+        "frame_consistency_pct": 71.4,
+        "max_confidence": 0.93,
+        "avg_confidence": 0.689,
+        "best_timestamp_sec": 6.93
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 11,
+        "frame_consistency_pct": 39.3,
+        "max_confidence": 0.91,
+        "avg_confidence": 0.58,
+        "best_timestamp_sec": 5.93
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_edge_long_walkaround.mp4"
+  },
+  "claim_pair_dent_scratch.mp4": {
+    "total_sampled_frames": 9,
+    "frames_with_any_damage": 9,
+    "damage_types_found": [
+      "lamp broken",
+      "dent",
+      "scratch",
+      "crack"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 3,
+        "frame_consistency_pct": 33.3,
+        "max_confidence": 0.944,
+        "avg_confidence": 0.9,
+        "best_timestamp_sec": 5.0
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 9,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.873,
+        "avg_confidence": 0.438,
+        "best_timestamp_sec": 5.0
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 9,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.809,
+        "avg_confidence": 0.465,
+        "best_timestamp_sec": 0.9
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 2,
+        "frame_consistency_pct": 22.2,
+        "max_confidence": 0.659,
+        "avg_confidence": 0.535,
+        "best_timestamp_sec": 0.0
+      }
+    ],
+    "visual_damage_score": 96.1,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_dent_scratch.mp4"
+  },
+  "claim_single_dent_v1.mp4": {
+    "total_sampled_frames": 14,
+    "frames_with_any_damage": 14,
+    "damage_types_found": [
+      "lamp broken",
+      "dent",
+      "scratch",
+      "crack"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 4,
+        "frame_consistency_pct": 28.6,
+        "max_confidence": 0.948,
+        "avg_confidence": 0.919,
+        "best_timestamp_sec": 3.7
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 14,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.929,
+        "avg_confidence": 0.736,
+        "best_timestamp_sec": 7.43
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 8,
+        "frame_consistency_pct": 57.1,
+        "max_confidence": 0.896,
+        "avg_confidence": 0.871,
+        "best_timestamp_sec": 6.67
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 2,
+        "frame_consistency_pct": 14.3,
+        "max_confidence": 0.273,
+        "avg_confidence": 0.272,
+        "best_timestamp_sec": 5.43
+      }
+    ],
+    "visual_damage_score": 91.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_dent_v1.mp4"
+  },
+  "claim_edge_single_image.mp4": {
+    "total_sampled_frames": 1,
+    "frames_with_any_damage": 1,
+    "damage_types_found": [
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 1,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.67,
+        "avg_confidence": 0.518,
+        "best_timestamp_sec": 0.0
+      }
+    ],
+    "visual_damage_score": 26.8,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_edge_single_image.mp4"
+  },
+  "claim_mixed_3.mp4": {
+    "total_sampled_frames": 11,
+    "frames_with_any_damage": 11,
+    "damage_types_found": [
+      "dent",
+      "crack",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 6,
+        "frame_consistency_pct": 54.5,
+        "max_confidence": 0.935,
+        "avg_confidence": 0.741,
+        "best_timestamp_sec": 0.0
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 6,
+        "frame_consistency_pct": 54.5,
+        "max_confidence": 0.772,
+        "avg_confidence": 0.682,
+        "best_timestamp_sec": 4.7
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 6,
+        "frame_consistency_pct": 54.5,
+        "max_confidence": 0.586,
+        "avg_confidence": 0.374,
+        "best_timestamp_sec": 3.6
+      }
+    ],
+    "visual_damage_score": 80.2,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_3.mp4"
+  },
+  "claim_single_glass_shatter_v2.mp4": {
+    "total_sampled_frames": 12,
+    "frames_with_any_damage": 12,
+    "damage_types_found": [
+      "glass shatter"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "glass shatter",
+        "frames_detected_in": 12,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.97,
+        "avg_confidence": 0.952,
+        "best_timestamp_sec": 6.07
+      }
+    ],
+    "visual_damage_score": 97.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_glass_shatter_v2.mp4"
+  },
+  "claim_single_lamp_broken_v1.mp4": {
+    "total_sampled_frames": 11,
+    "frames_with_any_damage": 11,
+    "damage_types_found": [
+      "lamp broken",
+      "crack",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 11,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.94,
+        "avg_confidence": 0.827,
+        "best_timestamp_sec": 1.57
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 2,
+        "frame_consistency_pct": 18.2,
+        "max_confidence": 0.755,
+        "avg_confidence": 0.511,
+        "best_timestamp_sec": 3.13
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 1,
+        "frame_consistency_pct": 9.1,
+        "max_confidence": 0.238,
+        "avg_confidence": 0.238,
+        "best_timestamp_sec": 6.0
+      }
+    ],
+    "visual_damage_score": 80.7,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_lamp_broken_v1.mp4"
+  },
+  "claim_single_glass_shatter_v1.mp4": {
+    "total_sampled_frames": 20,
+    "frames_with_any_damage": 20,
+    "damage_types_found": [
+      "glass shatter",
+      "scratch"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "glass shatter",
+        "frames_detected_in": 20,
+        "frame_consistency_pct": 100.0,
+        "max_confidence": 0.969,
+        "avg_confidence": 0.907,
+        "best_timestamp_sec": 5.77
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 1,
+        "frame_consistency_pct": 5.0,
+        "max_confidence": 0.427,
+        "avg_confidence": 0.427,
+        "best_timestamp_sec": 2.67
+      }
+    ],
+    "visual_damage_score": 99.6,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_glass_shatter_v1.mp4"
+  },
+  "claim_pair_dent_tire_flat.mp4": {
+    "total_sampled_frames": 17,
+    "frames_with_any_damage": 17,
+    "damage_types_found": [
+      "tire flat",
+      "dent",
+      "lamp broken",
+      "scratch",
+      "crack"
+    ],
+    "damage_summary": [
+      {
+        "damage_type": "tire flat",
+        "frames_detected_in": 14,
+        "frame_consistency_pct": 82.4,
+        "max_confidence": 0.972,
+        "avg_confidence": 0.884,
+        "best_timestamp_sec": 5.0
+      },
+      {
+        "damage_type": "dent",
+        "frames_detected_in": 6,
+        "frame_consistency_pct": 35.3,
+        "max_confidence": 0.864,
+        "avg_confidence": 0.567,
+        "best_timestamp_sec": 1.3
+      },
+      {
+        "damage_type": "lamp broken",
+        "frames_detected_in": 4,
+        "frame_consistency_pct": 23.5,
+        "max_confidence": 0.831,
+        "avg_confidence": 0.457,
+        "best_timestamp_sec": 2.07
+      },
+      {
+        "damage_type": "scratch",
+        "frames_detected_in": 12,
+        "frame_consistency_pct": 70.6,
+        "max_confidence": 0.827,
+        "avg_confidence": 0.57,
+        "best_timestamp_sec": 3.8
+      },
+      {
+        "damage_type": "crack",
+        "frames_detected_in": 4,
+        "frame_consistency_pct": 23.5,
+        "max_confidence": 0.524,
+        "avg_confidence": 0.317,
+        "best_timestamp_sec": 7.4
+      }
+    ],
+    "visual_damage_score": 100.0,
+    "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_dent_tire_flat.mp4"
+  }
+}

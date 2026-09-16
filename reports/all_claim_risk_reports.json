@@ -1,0 +1,2210 @@
+{
+  "claim_edge_long_walkaround.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 28,
+      "frames_with_any_damage": 27,
+      "damage_types_found": [
+        "lamp broken",
+        "tire flat",
+        "scratch",
+        "dent",
+        "crack"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 15,
+          "frame_consistency_pct": 53.6,
+          "max_confidence": 0.966,
+          "avg_confidence": 0.943,
+          "best_timestamp_sec": 5.93
+        },
+        {
+          "damage_type": "tire flat",
+          "frames_detected_in": 1,
+          "frame_consistency_pct": 3.6,
+          "max_confidence": 0.933,
+          "avg_confidence": 0.933,
+          "best_timestamp_sec": 10.0
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 19,
+          "frame_consistency_pct": 67.9,
+          "max_confidence": 0.931,
+          "avg_confidence": 0.711,
+          "best_timestamp_sec": 6.1
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 20,
+          "frame_consistency_pct": 71.4,
+          "max_confidence": 0.93,
+          "avg_confidence": 0.689,
+          "best_timestamp_sec": 6.93
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 11,
+          "frame_consistency_pct": 39.3,
+          "max_confidence": 0.91,
+          "avg_confidence": 0.58,
+          "best_timestamp_sec": 5.93
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_edge_long_walkaround.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 10.21,
+        "pitch_mean_hz": 100.9,
+        "pitch_std_hz": 8.9,
+        "onset_rate_per_sec": 5.78,
+        "pause_ratio": 0.2,
+        "rms_mean": 0.0488,
+        "rms_std": 0.038,
+        "zcr_std": 0.0785
+      },
+      "acoustic_stress_score": 42.5,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 88.5,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 42.5,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 88.5,
+      "key_findings": [
+        "lamp broken (max confidence 97%, visible in 54% of sampled frames)",
+        "tire flat (max confidence 93%, visible in 4% of sampled frames)",
+        "scratch (max confidence 93%, visible in 68% of sampled frames)",
+        "dent (max confidence 93%, visible in 71% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows tire flat rated severe. The vehicle body (unspecified area) shows scratch rated moderate. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows crack rated severe. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_edge_single_image.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 1,
+      "frames_with_any_damage": 1,
+      "damage_types_found": [
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 1,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.67,
+          "avg_confidence": 0.518,
+          "best_timestamp_sec": 0.0
+        }
+      ],
+      "visual_damage_score": 26.8,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_edge_single_image.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 3.83,
+        "pitch_mean_hz": 101.3,
+        "pitch_std_hz": 9.8,
+        "onset_rate_per_sec": 6.53,
+        "pause_ratio": 0.199,
+        "rms_mean": 0.0531,
+        "rms_std": 0.0392,
+        "zcr_std": 0.0964
+      },
+      "acoustic_stress_score": 64.7,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 34.4,
+      "risk_band": "low",
+      "recommendation": "Routine human review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 26.8,
+      "acoustic_stress_score": 64.7,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is low while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 34.4,
+      "key_findings": [
+        "scratch (max confidence 67%, visible in 100% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is low while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Routine human review",
+      "inspector_summary": "The submitted images/frames indicate minor damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows scratch rated minor. Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_mixed_1.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 23,
+      "frames_with_any_damage": 23,
+      "damage_types_found": [
+        "crack",
+        "lamp broken",
+        "dent",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 3,
+          "frame_consistency_pct": 13.0,
+          "max_confidence": 0.935,
+          "avg_confidence": 0.537,
+          "best_timestamp_sec": 9.23
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 12,
+          "frame_consistency_pct": 52.2,
+          "max_confidence": 0.934,
+          "avg_confidence": 0.817,
+          "best_timestamp_sec": 5.0
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 5,
+          "frame_consistency_pct": 21.7,
+          "max_confidence": 0.891,
+          "avg_confidence": 0.877,
+          "best_timestamp_sec": 4.8
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 14,
+          "frame_consistency_pct": 60.9,
+          "max_confidence": 0.845,
+          "avg_confidence": 0.614,
+          "best_timestamp_sec": 1.63
+        }
+      ],
+      "visual_damage_score": 87.3,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_1.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 9.38,
+        "pitch_mean_hz": 100.4,
+        "pitch_std_hz": 8.8,
+        "onset_rate_per_sec": 5.86,
+        "pause_ratio": 0.2,
+        "rms_mean": 0.0513,
+        "rms_std": 0.0392,
+        "zcr_std": 0.083
+      },
+      "acoustic_stress_score": 46.4,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 79.1,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 87.3,
+      "acoustic_stress_score": 46.4,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 79.1,
+      "key_findings": [
+        "crack (max confidence 94%, visible in 13% of sampled frames)",
+        "lamp broken (max confidence 93%, visible in 52% of sampled frames)",
+        "dent (max confidence 89%, visible in 22% of sampled frames)",
+        "scratch (max confidence 84%, visible in 61% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_mixed_2.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 38,
+      "frames_with_any_damage": 38,
+      "damage_types_found": [
+        "glass shatter",
+        "dent",
+        "lamp broken",
+        "crack",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "glass shatter",
+          "frames_detected_in": 27,
+          "frame_consistency_pct": 71.1,
+          "max_confidence": 0.974,
+          "avg_confidence": 0.961,
+          "best_timestamp_sec": 1.33
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 11,
+          "frame_consistency_pct": 28.9,
+          "max_confidence": 0.917,
+          "avg_confidence": 0.869,
+          "best_timestamp_sec": 7.27
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 6,
+          "frame_consistency_pct": 15.8,
+          "max_confidence": 0.724,
+          "avg_confidence": 0.574,
+          "best_timestamp_sec": 8.2
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 2,
+          "frame_consistency_pct": 5.3,
+          "max_confidence": 0.588,
+          "avg_confidence": 0.423,
+          "best_timestamp_sec": 8.87
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 5,
+          "frame_consistency_pct": 13.2,
+          "max_confidence": 0.585,
+          "avg_confidence": 0.472,
+          "best_timestamp_sec": 7.1
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_2.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 9.03,
+        "pitch_mean_hz": 96.5,
+        "pitch_std_hz": 13.1,
+        "onset_rate_per_sec": 6.2,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0551,
+        "rms_std": 0.0276,
+        "zcr_std": 0.0914
+      },
+      "acoustic_stress_score": 61.1,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 92.2,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 61.1,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 92.2,
+      "key_findings": [
+        "glass shatter (max confidence 97%, visible in 71% of sampled frames)",
+        "dent (max confidence 92%, visible in 29% of sampled frames)",
+        "lamp broken (max confidence 72%, visible in 16% of sampled frames)",
+        "crack (max confidence 59%, visible in 5% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows glass shatter rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows lamp broken rated moderate. The vehicle body (unspecified area) shows crack rated moderate. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_mixed_3.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 11,
+      "frames_with_any_damage": 11,
+      "damage_types_found": [
+        "dent",
+        "crack",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 6,
+          "frame_consistency_pct": 54.5,
+          "max_confidence": 0.935,
+          "avg_confidence": 0.741,
+          "best_timestamp_sec": 0.0
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 6,
+          "frame_consistency_pct": 54.5,
+          "max_confidence": 0.772,
+          "avg_confidence": 0.682,
+          "best_timestamp_sec": 4.7
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 6,
+          "frame_consistency_pct": 54.5,
+          "max_confidence": 0.586,
+          "avg_confidence": 0.374,
+          "best_timestamp_sec": 3.6
+        }
+      ],
+      "visual_damage_score": 80.2,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_3.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.48,
+        "pitch_mean_hz": 97.3,
+        "pitch_std_hz": 12.4,
+        "onset_rate_per_sec": 5.35,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0544,
+        "rms_std": 0.0275,
+        "zcr_std": 0.0928
+      },
+      "acoustic_stress_score": 39.8,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 72.1,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 80.2,
+      "acoustic_stress_score": 39.8,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 72.1,
+      "key_findings": [
+        "dent (max confidence 94%, visible in 54% of sampled frames)",
+        "crack (max confidence 77%, visible in 54% of sampled frames)",
+        "scratch (max confidence 59%, visible in 54% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_mixed_4.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 14,
+      "frames_with_any_damage": 14,
+      "damage_types_found": [
+        "dent",
+        "lamp broken",
+        "scratch",
+        "crack"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 7,
+          "frame_consistency_pct": 50.0,
+          "max_confidence": 0.934,
+          "avg_confidence": 0.638,
+          "best_timestamp_sec": 7.6
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 9,
+          "frame_consistency_pct": 64.3,
+          "max_confidence": 0.917,
+          "avg_confidence": 0.833,
+          "best_timestamp_sec": 2.43
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 7,
+          "frame_consistency_pct": 50.0,
+          "max_confidence": 0.885,
+          "avg_confidence": 0.608,
+          "best_timestamp_sec": 2.43
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 1,
+          "frame_consistency_pct": 7.1,
+          "max_confidence": 0.364,
+          "avg_confidence": 0.34,
+          "best_timestamp_sec": 2.6
+        }
+      ],
+      "visual_damage_score": 81.3,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_4.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 8.06,
+        "pitch_mean_hz": 96.1,
+        "pitch_std_hz": 12.9,
+        "onset_rate_per_sec": 5.09,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0535,
+        "rms_std": 0.0271,
+        "zcr_std": 0.0939
+      },
+      "acoustic_stress_score": 36.3,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 72.3,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 81.3,
+      "acoustic_stress_score": 36.3,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 72.3,
+      "key_findings": [
+        "dent (max confidence 93%, visible in 50% of sampled frames)",
+        "lamp broken (max confidence 92%, visible in 64% of sampled frames)",
+        "scratch (max confidence 88%, visible in 50% of sampled frames)",
+        "crack (max confidence 36%, visible in 7% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows scratch rated moderate. The vehicle body (unspecified area) shows crack rated moderate. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_mixed_5.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 26,
+      "frames_with_any_damage": 26,
+      "damage_types_found": [
+        "glass shatter",
+        "scratch",
+        "crack"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "glass shatter",
+          "frames_detected_in": 20,
+          "frame_consistency_pct": 76.9,
+          "max_confidence": 0.969,
+          "avg_confidence": 0.933,
+          "best_timestamp_sec": 0.6
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 9,
+          "frame_consistency_pct": 34.6,
+          "max_confidence": 0.91,
+          "avg_confidence": 0.457,
+          "best_timestamp_sec": 4.13
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 3,
+          "frame_consistency_pct": 11.5,
+          "max_confidence": 0.6,
+          "avg_confidence": 0.382,
+          "best_timestamp_sec": 7.63
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_5.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 8.82,
+        "pitch_mean_hz": 101.4,
+        "pitch_std_hz": 8.7,
+        "onset_rate_per_sec": 4.99,
+        "pause_ratio": 0.199,
+        "rms_mean": 0.0475,
+        "rms_std": 0.0375,
+        "zcr_std": 0.0954
+      },
+      "acoustic_stress_score": 23.9,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 84.8,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 23.9,
+      "signal_relationship": "conflict",
+      "signal_relationship_note": "High visual damage is paired with low acoustic stress; retain visual evidence and route for normal human assessment.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 84.8,
+      "key_findings": [
+        "glass shatter (max confidence 97%, visible in 77% of sampled frames)",
+        "scratch (max confidence 91%, visible in 35% of sampled frames)",
+        "crack (max confidence 60%, visible in 12% of sampled frames)"
+      ],
+      "flags": [
+        "High visual damage is paired with low acoustic stress; retain visual evidence and route for normal human assessment."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows glass shatter rated severe. The vehicle body (unspecified area) shows scratch rated moderate. The vehicle body (unspecified area) shows crack rated severe. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_mixed_6.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 16,
+      "frames_with_any_damage": 16,
+      "damage_types_found": [
+        "dent",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 16,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.868,
+          "avg_confidence": 0.548,
+          "best_timestamp_sec": 2.5
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 13,
+          "frame_consistency_pct": 81.2,
+          "max_confidence": 0.858,
+          "avg_confidence": 0.428,
+          "best_timestamp_sec": 7.07
+        }
+      ],
+      "visual_damage_score": 70.1,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_mixed_6.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.3,
+        "pitch_mean_hz": 100.3,
+        "pitch_std_hz": 9.5,
+        "onset_rate_per_sec": 5.62,
+        "pause_ratio": 0.2,
+        "rms_mean": 0.0547,
+        "rms_std": 0.0274,
+        "zcr_std": 0.1134
+      },
+      "acoustic_stress_score": 31.7,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 62.4,
+      "risk_band": "moderate",
+      "recommendation": "Standard human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 70.1,
+      "acoustic_stress_score": 31.7,
+      "signal_relationship": "conflict",
+      "signal_relationship_note": "High visual damage is paired with low acoustic stress; retain visual evidence and route for normal human assessment.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 62.4,
+      "key_findings": [
+        "dent (max confidence 87%, visible in 100% of sampled frames)",
+        "scratch (max confidence 86%, visible in 81% of sampled frames)"
+      ],
+      "flags": [
+        "High visual damage is paired with low acoustic stress; retain visual evidence and route for normal human assessment."
+      ],
+      "recommendation": "Standard human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_pair_crack_glass_shatter.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 26,
+      "frames_with_any_damage": 26,
+      "damage_types_found": [
+        "glass shatter",
+        "crack",
+        "dent",
+        "scratch",
+        "lamp broken"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "glass shatter",
+          "frames_detected_in": 20,
+          "frame_consistency_pct": 76.9,
+          "max_confidence": 0.924,
+          "avg_confidence": 0.708,
+          "best_timestamp_sec": 6.93
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 18,
+          "frame_consistency_pct": 69.2,
+          "max_confidence": 0.921,
+          "avg_confidence": 0.525,
+          "best_timestamp_sec": 4.73
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 26,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.912,
+          "avg_confidence": 0.6,
+          "best_timestamp_sec": 4.57
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 13,
+          "frame_consistency_pct": 50.0,
+          "max_confidence": 0.83,
+          "avg_confidence": 0.489,
+          "best_timestamp_sec": 6.3
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 8,
+          "frame_consistency_pct": 30.8,
+          "max_confidence": 0.744,
+          "avg_confidence": 0.548,
+          "best_timestamp_sec": 0.3
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_crack_glass_shatter.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.5,
+        "pitch_mean_hz": 99.2,
+        "pitch_std_hz": 11.6,
+        "onset_rate_per_sec": 5.87,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0541,
+        "rms_std": 0.0276,
+        "zcr_std": 0.0955
+      },
+      "acoustic_stress_score": 47.5,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 89.5,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 47.5,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 89.5,
+      "key_findings": [
+        "glass shatter (max confidence 92%, visible in 77% of sampled frames)",
+        "crack (max confidence 92%, visible in 69% of sampled frames)",
+        "dent (max confidence 91%, visible in 100% of sampled frames)",
+        "scratch (max confidence 83%, visible in 50% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows glass shatter rated severe. The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated minor. The vehicle body (unspecified area) shows lamp broken rated moderate. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_pair_dent_crack.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 26,
+      "frames_with_any_damage": 26,
+      "damage_types_found": [
+        "crack",
+        "lamp broken",
+        "dent",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 22,
+          "frame_consistency_pct": 84.6,
+          "max_confidence": 0.94,
+          "avg_confidence": 0.662,
+          "best_timestamp_sec": 2.17
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 17,
+          "frame_consistency_pct": 65.4,
+          "max_confidence": 0.925,
+          "avg_confidence": 0.696,
+          "best_timestamp_sec": 3.9
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 22,
+          "frame_consistency_pct": 84.6,
+          "max_confidence": 0.86,
+          "avg_confidence": 0.505,
+          "best_timestamp_sec": 1.8
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 14,
+          "frame_consistency_pct": 53.8,
+          "max_confidence": 0.792,
+          "avg_confidence": 0.394,
+          "best_timestamp_sec": 0.23
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_dent_crack.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.5,
+        "pitch_mean_hz": 100.4,
+        "pitch_std_hz": 11.4,
+        "onset_rate_per_sec": 6.27,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0509,
+        "rms_std": 0.0304,
+        "zcr_std": 0.0836
+      },
+      "acoustic_stress_score": 57.2,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 91.4,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 57.2,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 91.4,
+      "key_findings": [
+        "crack (max confidence 94%, visible in 85% of sampled frames)",
+        "lamp broken (max confidence 92%, visible in 65% of sampled frames)",
+        "dent (max confidence 86%, visible in 85% of sampled frames)",
+        "scratch (max confidence 79%, visible in 54% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_pair_dent_scratch.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 9,
+      "frames_with_any_damage": 9,
+      "damage_types_found": [
+        "lamp broken",
+        "dent",
+        "scratch",
+        "crack"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 3,
+          "frame_consistency_pct": 33.3,
+          "max_confidence": 0.944,
+          "avg_confidence": 0.9,
+          "best_timestamp_sec": 5.0
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 9,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.873,
+          "avg_confidence": 0.438,
+          "best_timestamp_sec": 5.0
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 9,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.809,
+          "avg_confidence": 0.465,
+          "best_timestamp_sec": 0.9
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 2,
+          "frame_consistency_pct": 22.2,
+          "max_confidence": 0.659,
+          "avg_confidence": 0.535,
+          "best_timestamp_sec": 0.0
+        }
+      ],
+      "visual_damage_score": 96.1,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_dent_scratch.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 6.9,
+        "pitch_mean_hz": 99.7,
+        "pitch_std_hz": 11.1,
+        "onset_rate_per_sec": 6.53,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0515,
+        "rms_std": 0.0304,
+        "zcr_std": 0.085
+      },
+      "acoustic_stress_score": 61.5,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 89.2,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 96.1,
+      "acoustic_stress_score": 61.5,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 89.2,
+      "key_findings": [
+        "lamp broken (max confidence 94%, visible in 33% of sampled frames)",
+        "dent (max confidence 87%, visible in 100% of sampled frames)",
+        "scratch (max confidence 81%, visible in 100% of sampled frames)",
+        "crack (max confidence 66%, visible in 22% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated minor. The vehicle body (unspecified area) shows crack rated severe. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_pair_dent_tire_flat.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 17,
+      "frames_with_any_damage": 17,
+      "damage_types_found": [
+        "tire flat",
+        "dent",
+        "lamp broken",
+        "scratch",
+        "crack"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "tire flat",
+          "frames_detected_in": 14,
+          "frame_consistency_pct": 82.4,
+          "max_confidence": 0.972,
+          "avg_confidence": 0.884,
+          "best_timestamp_sec": 5.0
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 6,
+          "frame_consistency_pct": 35.3,
+          "max_confidence": 0.864,
+          "avg_confidence": 0.567,
+          "best_timestamp_sec": 1.3
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 4,
+          "frame_consistency_pct": 23.5,
+          "max_confidence": 0.831,
+          "avg_confidence": 0.457,
+          "best_timestamp_sec": 2.07
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 12,
+          "frame_consistency_pct": 70.6,
+          "max_confidence": 0.827,
+          "avg_confidence": 0.57,
+          "best_timestamp_sec": 3.8
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 4,
+          "frame_consistency_pct": 23.5,
+          "max_confidence": 0.524,
+          "avg_confidence": 0.317,
+          "best_timestamp_sec": 7.4
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_dent_tire_flat.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 6.59,
+        "pitch_mean_hz": 104.0,
+        "pitch_std_hz": 9.6,
+        "onset_rate_per_sec": 6.22,
+        "pause_ratio": 0.2,
+        "rms_mean": 0.0496,
+        "rms_std": 0.0383,
+        "zcr_std": 0.1066
+      },
+      "acoustic_stress_score": 61.0,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 92.2,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 61.0,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 92.2,
+      "key_findings": [
+        "tire flat (max confidence 97%, visible in 82% of sampled frames)",
+        "dent (max confidence 86%, visible in 35% of sampled frames)",
+        "lamp broken (max confidence 83%, visible in 24% of sampled frames)",
+        "scratch (max confidence 83%, visible in 71% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows tire flat rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows lamp broken rated moderate. The vehicle body (unspecified area) shows scratch rated minor. The vehicle body (unspecified area) shows crack rated moderate. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_pair_lamp_broken_scratch.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 14,
+      "frames_with_any_damage": 14,
+      "damage_types_found": [
+        "lamp broken",
+        "dent",
+        "crack",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 13,
+          "frame_consistency_pct": 92.9,
+          "max_confidence": 0.963,
+          "avg_confidence": 0.809,
+          "best_timestamp_sec": 6.5
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 12,
+          "frame_consistency_pct": 85.7,
+          "max_confidence": 0.911,
+          "avg_confidence": 0.559,
+          "best_timestamp_sec": 3.1
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 6,
+          "frame_consistency_pct": 42.9,
+          "max_confidence": 0.888,
+          "avg_confidence": 0.759,
+          "best_timestamp_sec": 5.0
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 14,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.866,
+          "avg_confidence": 0.531,
+          "best_timestamp_sec": 5.0
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_lamp_broken_scratch.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 7.34,
+        "pitch_mean_hz": 103.1,
+        "pitch_std_hz": 9.9,
+        "onset_rate_per_sec": 6.27,
+        "pause_ratio": 0.202,
+        "rms_mean": 0.0485,
+        "rms_std": 0.038,
+        "zcr_std": 0.1052
+      },
+      "acoustic_stress_score": 69.4,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 93.9,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 69.4,
+      "signal_relationship": "agreement",
+      "signal_relationship_note": "Visual damage and acoustic stress are both high.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 93.9,
+      "key_findings": [
+        "lamp broken (max confidence 96%, visible in 93% of sampled frames)",
+        "dent (max confidence 91%, visible in 86% of sampled frames)",
+        "crack (max confidence 89%, visible in 43% of sampled frames)",
+        "scratch (max confidence 87%, visible in 100% of sampled frames)"
+      ],
+      "flags": [],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_pair_scratch_crack.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 18,
+      "frames_with_any_damage": 18,
+      "damage_types_found": [
+        "lamp broken",
+        "crack",
+        "dent",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 8,
+          "frame_consistency_pct": 44.4,
+          "max_confidence": 0.963,
+          "avg_confidence": 0.622,
+          "best_timestamp_sec": 4.53
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 14,
+          "frame_consistency_pct": 77.8,
+          "max_confidence": 0.932,
+          "avg_confidence": 0.686,
+          "best_timestamp_sec": 7.17
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 17,
+          "frame_consistency_pct": 94.4,
+          "max_confidence": 0.87,
+          "avg_confidence": 0.48,
+          "best_timestamp_sec": 5.23
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 15,
+          "frame_consistency_pct": 83.3,
+          "max_confidence": 0.858,
+          "avg_confidence": 0.51,
+          "best_timestamp_sec": 2.5
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_pair_scratch_crack.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 7.52,
+        "pitch_mean_hz": 104.2,
+        "pitch_std_hz": 9.6,
+        "onset_rate_per_sec": 5.98,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.052,
+        "rms_std": 0.0367,
+        "zcr_std": 0.093
+      },
+      "acoustic_stress_score": 54.1,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 90.8,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 54.1,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 90.8,
+      "key_findings": [
+        "lamp broken (max confidence 96%, visible in 44% of sampled frames)",
+        "crack (max confidence 93%, visible in 78% of sampled frames)",
+        "dent (max confidence 87%, visible in 94% of sampled frames)",
+        "scratch (max confidence 86%, visible in 83% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_crack_v1.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 10,
+      "frames_with_any_damage": 10,
+      "damage_types_found": [
+        "dent",
+        "crack",
+        "scratch",
+        "lamp broken"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 5,
+          "frame_consistency_pct": 50.0,
+          "max_confidence": 0.96,
+          "avg_confidence": 0.827,
+          "best_timestamp_sec": 0.77
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 10,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.897,
+          "avg_confidence": 0.584,
+          "best_timestamp_sec": 3.0
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 8,
+          "frame_consistency_pct": 80.0,
+          "max_confidence": 0.612,
+          "avg_confidence": 0.437,
+          "best_timestamp_sec": 6.63
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 3,
+          "frame_consistency_pct": 30.0,
+          "max_confidence": 0.355,
+          "avg_confidence": 0.279,
+          "best_timestamp_sec": 6.63
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_crack_v1.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 8.93,
+        "pitch_mean_hz": 96.1,
+        "pitch_std_hz": 13.1,
+        "onset_rate_per_sec": 6.27,
+        "pause_ratio": 0.2,
+        "rms_mean": 0.0493,
+        "rms_std": 0.0298,
+        "zcr_std": 0.0828
+      },
+      "acoustic_stress_score": 61.1,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 92.2,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 61.1,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 92.2,
+      "key_findings": [
+        "dent (max confidence 96%, visible in 50% of sampled frames)",
+        "crack (max confidence 90%, visible in 100% of sampled frames)",
+        "scratch (max confidence 61%, visible in 80% of sampled frames)",
+        "lamp broken (max confidence 36%, visible in 30% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows scratch rated minor. The vehicle body (unspecified area) shows lamp broken rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_crack_v2.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 9,
+      "frames_with_any_damage": 9,
+      "damage_types_found": [
+        "dent",
+        "scratch",
+        "crack",
+        "lamp broken"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 4,
+          "frame_consistency_pct": 44.4,
+          "max_confidence": 0.958,
+          "avg_confidence": 0.948,
+          "best_timestamp_sec": 6.73
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 7,
+          "frame_consistency_pct": 77.8,
+          "max_confidence": 0.896,
+          "avg_confidence": 0.526,
+          "best_timestamp_sec": 8.37
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 7,
+          "frame_consistency_pct": 77.8,
+          "max_confidence": 0.876,
+          "avg_confidence": 0.514,
+          "best_timestamp_sec": 4.37
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 4,
+          "frame_consistency_pct": 44.4,
+          "max_confidence": 0.791,
+          "avg_confidence": 0.68,
+          "best_timestamp_sec": 6.0
+        }
+      ],
+      "visual_damage_score": 100.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_crack_v2.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 8.98,
+        "pitch_mean_hz": 100.7,
+        "pitch_std_hz": 9.1,
+        "onset_rate_per_sec": 5.57,
+        "pause_ratio": 0.202,
+        "rms_mean": 0.0508,
+        "rms_std": 0.0385,
+        "zcr_std": 0.0832
+      },
+      "acoustic_stress_score": 47.4,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 89.5,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 100.0,
+      "acoustic_stress_score": 47.4,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 89.5,
+      "key_findings": [
+        "dent (max confidence 96%, visible in 44% of sampled frames)",
+        "scratch (max confidence 90%, visible in 78% of sampled frames)",
+        "crack (max confidence 88%, visible in 78% of sampled frames)",
+        "lamp broken (max confidence 79%, visible in 44% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated moderate. The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows lamp broken rated moderate. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_dent_v1.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 14,
+      "frames_with_any_damage": 14,
+      "damage_types_found": [
+        "lamp broken",
+        "dent",
+        "scratch",
+        "crack"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 4,
+          "frame_consistency_pct": 28.6,
+          "max_confidence": 0.948,
+          "avg_confidence": 0.919,
+          "best_timestamp_sec": 3.7
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 14,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.929,
+          "avg_confidence": 0.736,
+          "best_timestamp_sec": 7.43
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 8,
+          "frame_consistency_pct": 57.1,
+          "max_confidence": 0.896,
+          "avg_confidence": 0.871,
+          "best_timestamp_sec": 6.67
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 2,
+          "frame_consistency_pct": 14.3,
+          "max_confidence": 0.273,
+          "avg_confidence": 0.272,
+          "best_timestamp_sec": 5.43
+        }
+      ],
+      "visual_damage_score": 91.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_dent_v1.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 8.06,
+        "pitch_mean_hz": 96.1,
+        "pitch_std_hz": 12.9,
+        "onset_rate_per_sec": 5.09,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0535,
+        "rms_std": 0.0271,
+        "zcr_std": 0.0939
+      },
+      "acoustic_stress_score": 36.3,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 80.1,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 91.0,
+      "acoustic_stress_score": 36.3,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 80.1,
+      "key_findings": [
+        "lamp broken (max confidence 95%, visible in 29% of sampled frames)",
+        "dent (max confidence 93%, visible in 100% of sampled frames)",
+        "scratch (max confidence 90%, visible in 57% of sampled frames)",
+        "crack (max confidence 27%, visible in 14% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated moderate. The vehicle body (unspecified area) shows crack rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_dent_v2.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 12,
+      "frames_with_any_damage": 12,
+      "damage_types_found": [
+        "dent",
+        "scratch",
+        "crack"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 12,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.856,
+          "avg_confidence": 0.424,
+          "best_timestamp_sec": 6.0
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 9,
+          "frame_consistency_pct": 75.0,
+          "max_confidence": 0.784,
+          "avg_confidence": 0.529,
+          "best_timestamp_sec": 1.4
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 2,
+          "frame_consistency_pct": 16.7,
+          "max_confidence": 0.542,
+          "avg_confidence": 0.498,
+          "best_timestamp_sec": 3.13
+        }
+      ],
+      "visual_damage_score": 77.6,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_dent_v2.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.83,
+        "pitch_mean_hz": 97.0,
+        "pitch_std_hz": 12.6,
+        "onset_rate_per_sec": 5.24,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0543,
+        "rms_std": 0.0274,
+        "zcr_std": 0.092
+      },
+      "acoustic_stress_score": 38.2,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 69.7,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 77.6,
+      "acoustic_stress_score": 38.2,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 69.7,
+      "key_findings": [
+        "dent (max confidence 86%, visible in 100% of sampled frames)",
+        "scratch (max confidence 78%, visible in 75% of sampled frames)",
+        "crack (max confidence 54%, visible in 17% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate moderate damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows dent rated moderate. The vehicle body (unspecified area) shows scratch rated minor. The vehicle body (unspecified area) shows crack rated moderate. Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_glass_shatter_v1.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 20,
+      "frames_with_any_damage": 20,
+      "damage_types_found": [
+        "glass shatter",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "glass shatter",
+          "frames_detected_in": 20,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.969,
+          "avg_confidence": 0.907,
+          "best_timestamp_sec": 5.77
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 1,
+          "frame_consistency_pct": 5.0,
+          "max_confidence": 0.427,
+          "avg_confidence": 0.427,
+          "best_timestamp_sec": 2.67
+        }
+      ],
+      "visual_damage_score": 99.6,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_glass_shatter_v1.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 7.3,
+        "pitch_mean_hz": 103.5,
+        "pitch_std_hz": 8.8,
+        "onset_rate_per_sec": 5.07,
+        "pause_ratio": 0.2,
+        "rms_mean": 0.0491,
+        "rms_std": 0.0374,
+        "zcr_std": 0.1314
+      },
+      "acoustic_stress_score": 36.1,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 86.9,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 99.6,
+      "acoustic_stress_score": 36.1,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 86.9,
+      "key_findings": [
+        "glass shatter (max confidence 97%, visible in 100% of sampled frames)",
+        "scratch (max confidence 43%, visible in 5% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows glass shatter rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_glass_shatter_v2.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 12,
+      "frames_with_any_damage": 12,
+      "damage_types_found": [
+        "glass shatter"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "glass shatter",
+          "frames_detected_in": 12,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.97,
+          "avg_confidence": 0.952,
+          "best_timestamp_sec": 6.07
+        }
+      ],
+      "visual_damage_score": 97.0,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_glass_shatter_v2.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.67,
+        "pitch_mean_hz": 99.0,
+        "pitch_std_hz": 11.2,
+        "onset_rate_per_sec": 6.65,
+        "pause_ratio": 0.199,
+        "rms_mean": 0.0532,
+        "rms_std": 0.0286,
+        "zcr_std": 0.0922
+      },
+      "acoustic_stress_score": 56.3,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 88.9,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 97.0,
+      "acoustic_stress_score": 56.3,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 88.9,
+      "key_findings": [
+        "glass shatter (max confidence 97%, visible in 100% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows glass shatter rated severe. Replacement is recommended for Vehicle body (unspecified area). Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_lamp_broken_v1.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 11,
+      "frames_with_any_damage": 11,
+      "damage_types_found": [
+        "lamp broken",
+        "crack",
+        "scratch"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 11,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.94,
+          "avg_confidence": 0.827,
+          "best_timestamp_sec": 1.57
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 2,
+          "frame_consistency_pct": 18.2,
+          "max_confidence": 0.755,
+          "avg_confidence": 0.511,
+          "best_timestamp_sec": 3.13
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 1,
+          "frame_consistency_pct": 9.1,
+          "max_confidence": 0.238,
+          "avg_confidence": 0.238,
+          "best_timestamp_sec": 6.0
+        }
+      ],
+      "visual_damage_score": 80.7,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_lamp_broken_v1.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.07,
+        "pitch_mean_hz": 99.8,
+        "pitch_std_hz": 8.0,
+        "onset_rate_per_sec": 6.65,
+        "pause_ratio": 0.2,
+        "rms_mean": 0.0531,
+        "rms_std": 0.0278,
+        "zcr_std": 0.109
+      },
+      "acoustic_stress_score": 45.9,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 73.7,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 80.7,
+      "acoustic_stress_score": 45.9,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 73.7,
+      "key_findings": [
+        "lamp broken (max confidence 94%, visible in 100% of sampled frames)",
+        "crack (max confidence 76%, visible in 18% of sampled frames)",
+        "scratch (max confidence 24%, visible in 9% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows crack rated severe. The vehicle body (unspecified area) shows scratch rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_lamp_broken_v2.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 26,
+      "frames_with_any_damage": 26,
+      "damage_types_found": [
+        "lamp broken",
+        "scratch",
+        "dent"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 23,
+          "frame_consistency_pct": 88.5,
+          "max_confidence": 0.953,
+          "avg_confidence": 0.873,
+          "best_timestamp_sec": 7.8
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 19,
+          "frame_consistency_pct": 73.1,
+          "max_confidence": 0.95,
+          "avg_confidence": 0.713,
+          "best_timestamp_sec": 6.0
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 14,
+          "frame_consistency_pct": 53.8,
+          "max_confidence": 0.839,
+          "avg_confidence": 0.445,
+          "best_timestamp_sec": 8.0
+        }
+      ],
+      "visual_damage_score": 86.3,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_lamp_broken_v2.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 9.0,
+        "pitch_mean_hz": 104.2,
+        "pitch_std_hz": 9.8,
+        "onset_rate_per_sec": 5.78,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0495,
+        "rms_std": 0.0373,
+        "zcr_std": 0.0969
+      },
+      "acoustic_stress_score": 52.6,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 79.6,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 86.3,
+      "acoustic_stress_score": 52.6,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 79.6,
+      "key_findings": [
+        "lamp broken (max confidence 95%, visible in 88% of sampled frames)",
+        "scratch (max confidence 95%, visible in 73% of sampled frames)",
+        "dent (max confidence 84%, visible in 54% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows scratch rated moderate. The vehicle body (unspecified area) shows dent rated moderate. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_scratch_v1.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 7,
+      "frames_with_any_damage": 7,
+      "damage_types_found": [
+        "lamp broken",
+        "scratch",
+        "crack",
+        "dent"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 5,
+          "frame_consistency_pct": 71.4,
+          "max_confidence": 0.957,
+          "avg_confidence": 0.779,
+          "best_timestamp_sec": 6.0
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 7,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.856,
+          "avg_confidence": 0.559,
+          "best_timestamp_sec": 6.0
+        },
+        {
+          "damage_type": "crack",
+          "frames_detected_in": 4,
+          "frame_consistency_pct": 57.1,
+          "max_confidence": 0.525,
+          "avg_confidence": 0.397,
+          "best_timestamp_sec": 3.0
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 2,
+          "frame_consistency_pct": 28.6,
+          "max_confidence": 0.47,
+          "avg_confidence": 0.378,
+          "best_timestamp_sec": 1.93
+        }
+      ],
+      "visual_damage_score": 86.4,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_scratch_v1.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 8.89,
+        "pitch_mean_hz": 104.5,
+        "pitch_std_hz": 9.4,
+        "onset_rate_per_sec": 5.17,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0502,
+        "rms_std": 0.0373,
+        "zcr_std": 0.0957
+      },
+      "acoustic_stress_score": 37.5,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 76.6,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 86.4,
+      "acoustic_stress_score": 37.5,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 76.6,
+      "key_findings": [
+        "lamp broken (max confidence 96%, visible in 71% of sampled frames)",
+        "scratch (max confidence 86%, visible in 100% of sampled frames)",
+        "crack (max confidence 52%, visible in 57% of sampled frames)",
+        "dent (max confidence 47%, visible in 29% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows scratch rated minor. The vehicle body (unspecified area) shows crack rated moderate. The vehicle body (unspecified area) shows dent rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_scratch_v2.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 9,
+      "frames_with_any_damage": 9,
+      "damage_types_found": [
+        "scratch",
+        "lamp broken",
+        "dent"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 9,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.931,
+          "avg_confidence": 0.45,
+          "best_timestamp_sec": 2.4
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 4,
+          "frame_consistency_pct": 44.4,
+          "max_confidence": 0.9,
+          "avg_confidence": 0.703,
+          "best_timestamp_sec": 8.8
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 3,
+          "frame_consistency_pct": 33.3,
+          "max_confidence": 0.839,
+          "avg_confidence": 0.762,
+          "best_timestamp_sec": 3.0
+        }
+      ],
+      "visual_damage_score": 68.4,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_scratch_v2.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "calm",
+      "acoustic_features": {
+        "duration_sec": 8.71,
+        "pitch_mean_hz": 101.3,
+        "pitch_std_hz": 9.2,
+        "onset_rate_per_sec": 5.63,
+        "pause_ratio": 0.199,
+        "rms_mean": 0.0484,
+        "rms_std": 0.0386,
+        "zcr_std": 0.0869
+      },
+      "acoustic_stress_score": 40.0,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 62.7,
+      "risk_band": "moderate",
+      "recommendation": "Standard human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 68.4,
+      "acoustic_stress_score": 40.0,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 62.7,
+      "key_findings": [
+        "scratch (max confidence 93%, visible in 100% of sampled frames)",
+        "lamp broken (max confidence 90%, visible in 44% of sampled frames)",
+        "dent (max confidence 84%, visible in 33% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Standard human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows scratch rated moderate. The vehicle body (unspecified area) shows lamp broken rated severe. The vehicle body (unspecified area) shows dent rated moderate. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_tire_flat_v1.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 18,
+      "frames_with_any_damage": 18,
+      "damage_types_found": [
+        "tire flat",
+        "dent",
+        "scratch",
+        "lamp broken"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "tire flat",
+          "frames_detected_in": 10,
+          "frame_consistency_pct": 55.6,
+          "max_confidence": 0.967,
+          "avg_confidence": 0.838,
+          "best_timestamp_sec": 0.0
+        },
+        {
+          "damage_type": "dent",
+          "frames_detected_in": 12,
+          "frame_consistency_pct": 66.7,
+          "max_confidence": 0.933,
+          "avg_confidence": 0.616,
+          "best_timestamp_sec": 4.73
+        },
+        {
+          "damage_type": "scratch",
+          "frames_detected_in": 8,
+          "frame_consistency_pct": 44.4,
+          "max_confidence": 0.771,
+          "avg_confidence": 0.508,
+          "best_timestamp_sec": 1.37
+        },
+        {
+          "damage_type": "lamp broken",
+          "frames_detected_in": 6,
+          "frame_consistency_pct": 33.3,
+          "max_confidence": 0.401,
+          "avg_confidence": 0.33,
+          "best_timestamp_sec": 6.0
+        }
+      ],
+      "visual_damage_score": 96.3,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_tire_flat_v1.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 8.07,
+        "pitch_mean_hz": 97.2,
+        "pitch_std_hz": 12.2,
+        "onset_rate_per_sec": 6.57,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.0509,
+        "rms_std": 0.0292,
+        "zcr_std": 0.082
+      },
+      "acoustic_stress_score": 65.2,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 90.1,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 96.3,
+      "acoustic_stress_score": 65.2,
+      "signal_relationship": "agreement",
+      "signal_relationship_note": "Visual damage and acoustic stress are both high.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 90.1,
+      "key_findings": [
+        "tire flat (max confidence 97%, visible in 56% of sampled frames)",
+        "dent (max confidence 93%, visible in 67% of sampled frames)",
+        "scratch (max confidence 77%, visible in 44% of sampled frames)",
+        "lamp broken (max confidence 40%, visible in 33% of sampled frames)"
+      ],
+      "flags": [],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows tire flat rated severe. The vehicle body (unspecified area) shows dent rated severe. The vehicle body (unspecified area) shows scratch rated minor. The vehicle body (unspecified area) shows lamp broken rated minor. Replacement is recommended for Vehicle body (unspecified area). Vehicle body (unspecified area) appears suitable for repair. Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. The vehicle body (unspecified area) may be repairable. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  },
+  "claim_single_tire_flat_v2.mp4": {
+    "visual_report": {
+      "total_sampled_frames": 11,
+      "frames_with_any_damage": 11,
+      "damage_types_found": [
+        "tire flat"
+      ],
+      "damage_summary": [
+        {
+          "damage_type": "tire flat",
+          "frames_detected_in": 11,
+          "frame_consistency_pct": 100.0,
+          "max_confidence": 0.976,
+          "avg_confidence": 0.929,
+          "best_timestamp_sec": 2.6
+        }
+      ],
+      "visual_damage_score": 87.8,
+      "video_path": "/kaggle/input/datasets/ronak038/sample-videos-with-audios/claim_single_tire_flat_v2.mp4"
+    },
+    "audio_report": {
+      "narration_style_ground_truth": "distressed",
+      "acoustic_features": {
+        "duration_sec": 7.13,
+        "pitch_mean_hz": 98.2,
+        "pitch_std_hz": 12.2,
+        "onset_rate_per_sec": 5.61,
+        "pause_ratio": 0.201,
+        "rms_mean": 0.056,
+        "rms_std": 0.0267,
+        "zcr_std": 0.0878
+      },
+      "acoustic_stress_score": 42.1,
+      "transcribed_text": null
+    },
+    "risk_assessment": {
+      "claim_risk_score": 78.7,
+      "risk_band": "high",
+      "recommendation": "Priority human assessor review",
+      "score_formula": "80% visual damage score + 20% acoustic stress score",
+      "visual_damage_score": 87.8,
+      "acoustic_stress_score": 42.1,
+      "signal_relationship": "mixed",
+      "signal_relationship_note": "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context.",
+      "important_limit": "Decision-support triage only. A qualified human must make all coverage, liability, fraud, and payment decisions."
+    },
+    "claim_summary": {
+      "risk_score": 78.7,
+      "key_findings": [
+        "tire flat (max confidence 98%, visible in 100% of sampled frames)"
+      ],
+      "flags": [
+        "Visual damage is high while acoustic stress is moderate; a reviewer should consider both as context."
+      ],
+      "recommendation": "Priority human assessor review",
+      "inspector_summary": "The submitted images/frames indicate severe damage to Not specified involving Vehicle body (unspecified area). The vehicle body (unspecified area) shows tire flat rated severe. Replacement is recommended for Vehicle body (unspecified area). Further physical inspection is recommended to rule out hidden structural or mechanical damage.",
+      "customer_summary": "Your vehicle has visible damage mainly affecting the vehicle body (unspecified area). The vehicle body (unspecified area) may need replacement. A physical inspection is recommended to check for damage that cannot be seen in the photos.",
+      "summary_source": "deterministic_template",
+      "llm_fallback_reason": "No module named 'langchain_core'"
+    }
+  }
+}

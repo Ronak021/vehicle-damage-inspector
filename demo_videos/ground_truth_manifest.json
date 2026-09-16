@@ -1,0 +1,516 @@
+{
+  "claim_single_dent_v1.mp4": {
+    "source_images": [
+      "003879.jpg",
+      "001671.jpg",
+      "002624.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "distressed",
+    "narration_text": "So, um, this is really frustrating, but, uh, my vehicle has dent, lamp broken, and a scratch. I, um, I just want this resolved quickly, uh, if possible.",
+    "narration_audio_path": "sample_audio/claim_single_dent_v1.wav",
+    "audio_duration_sec": 6.41,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_dent_v1.mp4"
+  },
+  "claim_single_dent_v2.mp4": {
+    "source_images": [
+      "002062.jpg",
+      "000044.jpg",
+      "000625.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "scratch"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "distressed",
+    "narration_text": "So, um, this is really frustrating, but, uh, my vehicle has crack, dent, and a scratch. I, um, I just want this resolved quickly, uh, if possible.",
+    "narration_audio_path": "sample_audio/claim_single_dent_v2.wav",
+    "audio_duration_sec": 6.15,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_dent_v2.mp4"
+  },
+  "claim_single_scratch_v1.mp4": {
+    "source_images": [
+      "002235.jpg",
+      "000400.jpg",
+      "003392.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "calm",
+    "narration_text": "I wanted to report some damage to my car. You can see crack, dent, lamp broken, and a scratch on the vehicle. I have photos attached.",
+    "narration_audio_path": "sample_audio/claim_single_scratch_v1.wav",
+    "audio_duration_sec": 8.18,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_scratch_v1.mp4"
+  },
+  "claim_single_scratch_v2.mp4": {
+    "source_images": [
+      "002803.jpg",
+      "001488.jpg",
+      "001394.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "calm",
+    "narration_text": "Hi, I'm filing a claim for my vehicle. There's dent, lamp broken, and a scratch. It happened yesterday in the parking lot.",
+    "narration_audio_path": "sample_audio/claim_single_scratch_v2.wav",
+    "audio_duration_sec": 7.36,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_scratch_v2.mp4"
+  },
+  "claim_single_crack_v1.mp4": {
+    "source_images": [
+      "001562.jpg",
+      "000550.jpg",
+      "003734.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "distressed",
+    "narration_text": "Um, hi, so, uh, my car got, um, damaged. There's, uh, crack, dent, lamp broken, and a scratch, I think. It happened, um, really fast, I didn't really see it coming.",
+    "narration_audio_path": "sample_audio/claim_single_crack_v1.wav",
+    "audio_duration_sec": 7.27,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_crack_v1.mp4"
+  },
+  "claim_single_crack_v2.mp4": {
+    "source_images": [
+      "000886.jpg",
+      "002801.jpg",
+      "001874.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "calm",
+    "narration_text": "Hi, I'm filing a claim for my vehicle. There's crack, dent, lamp broken, and a scratch. It happened yesterday in the parking lot.",
+    "narration_audio_path": "sample_audio/claim_single_crack_v2.wav",
+    "audio_duration_sec": 7.84,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_crack_v2.mp4"
+  },
+  "claim_single_glass_shatter_v1.mp4": {
+    "source_images": [
+      "000288.jpg",
+      "003027.jpg",
+      "003768.jpg"
+    ],
+    "expected_damage_types": [
+      "glass shatter"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "calm",
+    "narration_text": "This is regarding my recent claim. The car has a glass shatter. Please let me know the next steps.",
+    "narration_audio_path": "sample_audio/claim_single_glass_shatter_v1.wav",
+    "audio_duration_sec": 5.64,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_glass_shatter_v1.mp4"
+  },
+  "claim_single_glass_shatter_v2.mp4": {
+    "source_images": [
+      "000214.jpg",
+      "000253.jpg",
+      "001118.jpg"
+    ],
+    "expected_damage_types": [
+      "glass shatter"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "distressed",
+    "narration_text": "Um, hi, so, uh, my car got, um, damaged. There's, uh, a glass shatter, I think. It happened, um, really fast, I didn't really see it coming.",
+    "narration_audio_path": "sample_audio/claim_single_glass_shatter_v2.wav",
+    "audio_duration_sec": 6.03,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_glass_shatter_v2.mp4"
+  },
+  "claim_single_lamp_broken_v1.mp4": {
+    "source_images": [
+      "000387.jpg",
+      "001900.jpg",
+      "001368.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "lamp broken"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "distressed",
+    "narration_text": "I, uh, I'm not really sure what happened exactly, but, um, there's crack, and a lamp broken now. It's, uh, pretty stressful, honestly.",
+    "narration_audio_path": "sample_audio/claim_single_lamp_broken_v1.wav",
+    "audio_duration_sec": 5.4,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_lamp_broken_v1.mp4"
+  },
+  "claim_single_lamp_broken_v2.mp4": {
+    "source_images": [
+      "001314.jpg",
+      "002275.jpg",
+      "000698.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "calm",
+    "narration_text": "I wanted to report some damage to my car. You can see dent, lamp broken, and a scratch on the vehicle. I have photos attached.",
+    "narration_audio_path": "sample_audio/claim_single_lamp_broken_v2.wav",
+    "audio_duration_sec": 7.72,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_lamp_broken_v2.mp4"
+  },
+  "claim_single_tire_flat_v1.mp4": {
+    "source_images": [
+      "000730.jpg",
+      "003829.jpg",
+      "000237.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "tire flat"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "distressed",
+    "narration_text": "Um, hi, so, uh, my car got, um, damaged. There's, uh, dent, and a tire flat, I think. It happened, um, really fast, I didn't really see it coming.",
+    "narration_audio_path": "sample_audio/claim_single_tire_flat_v1.wav",
+    "audio_duration_sec": 6.4,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_tire_flat_v1.mp4"
+  },
+  "claim_single_tire_flat_v2.mp4": {
+    "source_images": [
+      "003296.jpg",
+      "000969.jpg",
+      "000778.jpg"
+    ],
+    "expected_damage_types": [
+      "tire flat"
+    ],
+    "video_type": "single_class_focus",
+    "narration_style": "distressed",
+    "narration_text": "So, um, this is really frustrating, but, uh, my vehicle has a tire flat. I, um, I just want this resolved quickly, uh, if possible.",
+    "narration_audio_path": "sample_audio/claim_single_tire_flat_v2.wav",
+    "audio_duration_sec": 5.45,
+    "video_duration_sec": 9.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_single_tire_flat_v2.mp4"
+  },
+  "claim_pair_dent_scratch.mp4": {
+    "source_images": [
+      "002597.jpg",
+      "000848.jpg",
+      "002151.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "pairwise_combo (both_classes_same_image)",
+    "narration_style": "distressed",
+    "narration_text": "Um, hi, so, uh, my car got, um, damaged. There's, uh, dent, lamp broken, and a scratch, I think. It happened, um, really fast, I didn't really see it coming.",
+    "narration_audio_path": "sample_audio/claim_pair_dent_scratch.wav",
+    "audio_duration_sec": 6.95,
+    "video_duration_sec": 7.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_pair_dent_scratch.mp4"
+  },
+  "claim_pair_crack_glass_shatter.mp4": {
+    "source_images": [
+      "000513.jpg",
+      "003226.jpg",
+      "000042.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "glass shatter",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "pairwise_combo (both_classes_same_image)",
+    "narration_style": "distressed",
+    "narration_text": "So, um, this is really frustrating, but, uh, my vehicle has crack, dent, glass shatter, lamp broken, and a scratch. I, um, I just want this resolved quickly, uh, if possible.",
+    "narration_audio_path": "sample_audio/claim_pair_crack_glass_shatter.wav",
+    "audio_duration_sec": 7.26,
+    "video_duration_sec": 7.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_pair_crack_glass_shatter.mp4"
+  },
+  "claim_pair_scratch_crack.mp4": {
+    "source_images": [
+      "003831.jpg",
+      "003087.jpg",
+      "003948.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "pairwise_combo (both_classes_same_image)",
+    "narration_style": "calm",
+    "narration_text": "I wanted to report some damage to my car. You can see crack, dent, lamp broken, and a scratch on the vehicle. I have photos attached.",
+    "narration_audio_path": "sample_audio/claim_pair_scratch_crack.wav",
+    "audio_duration_sec": 8.18,
+    "video_duration_sec": 7.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_pair_scratch_crack.mp4"
+  },
+  "claim_pair_dent_tire_flat.mp4": {
+    "source_images": [
+      "000237.jpg",
+      "001236.jpg",
+      "001885.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "scratch",
+      "tire flat"
+    ],
+    "video_type": "pairwise_combo (both_classes_same_image)",
+    "narration_style": "calm",
+    "narration_text": "This is regarding my recent claim. The car has dent, scratch, and a tire flat. Please let me know the next steps.",
+    "narration_audio_path": "sample_audio/claim_pair_dent_tire_flat.wav",
+    "audio_duration_sec": 6.83,
+    "video_duration_sec": 7.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_pair_dent_tire_flat.mp4"
+  },
+  "claim_pair_lamp_broken_scratch.mp4": {
+    "source_images": [
+      "000040.jpg",
+      "002151.jpg",
+      "003087.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "pairwise_combo (both_classes_same_image)",
+    "narration_style": "calm",
+    "narration_text": "This is regarding my recent claim. The car has crack, dent, lamp broken, and a scratch. Please let me know the next steps.",
+    "narration_audio_path": "sample_audio/claim_pair_lamp_broken_scratch.wav",
+    "audio_duration_sec": 7.58,
+    "video_duration_sec": 7.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_pair_lamp_broken_scratch.mp4"
+  },
+  "claim_pair_dent_crack.mp4": {
+    "source_images": [
+      "003948.jpg",
+      "000191.jpg",
+      "000570.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "pairwise_combo (both_classes_same_image)",
+    "narration_style": "distressed",
+    "narration_text": "Um, hi, so, uh, my car got, um, damaged. There's, uh, crack, dent, lamp broken, and a scratch, I think. It happened, um, really fast, I didn't really see it coming.",
+    "narration_audio_path": "sample_audio/claim_pair_dent_crack.wav",
+    "audio_duration_sec": 7.27,
+    "video_duration_sec": 7.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_pair_dent_crack.mp4"
+  },
+  "claim_mixed_1.mp4": {
+    "source_images": [
+      "002931.jpg",
+      "003011.jpg",
+      "002275.jpg",
+      "002267.jpg",
+      "001720.jpg",
+      "002502.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "mixed_realistic_claim",
+    "narration_style": "calm",
+    "narration_text": "Hi, I'm filing a claim for my vehicle. There's crack, dent, lamp broken, and a scratch. It happened yesterday in the parking lot.",
+    "narration_audio_path": "sample_audio/claim_mixed_1.wav",
+    "audio_duration_sec": 7.84,
+    "video_duration_sec": 15.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_mixed_1.mp4"
+  },
+  "claim_mixed_2.mp4": {
+    "source_images": [
+      "003720.jpg",
+      "003793.jpg",
+      "001483.jpg",
+      "001493.jpg",
+      "003124.jpg",
+      "000152.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "glass shatter",
+      "lamp broken",
+      "scratch",
+      "tire flat"
+    ],
+    "video_type": "mixed_realistic_claim",
+    "narration_style": "distressed",
+    "narration_text": "So, um, this is really frustrating, but, uh, my vehicle has dent, glass shatter, lamp broken, scratch, and a tire flat. I, um, I just want this resolved quickly, uh, if possible.",
+    "narration_audio_path": "sample_audio/claim_mixed_2.wav",
+    "audio_duration_sec": 7.37,
+    "video_duration_sec": 15.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_mixed_2.mp4"
+  },
+  "claim_mixed_3.mp4": {
+    "source_images": [
+      "000905.jpg",
+      "002169.jpg",
+      "002741.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "scratch"
+    ],
+    "video_type": "mixed_realistic_claim",
+    "narration_style": "distressed",
+    "narration_text": "So, um, this is really frustrating, but, uh, my vehicle has crack, dent, and a scratch. I, um, I just want this resolved quickly, uh, if possible.",
+    "narration_audio_path": "sample_audio/claim_mixed_3.wav",
+    "audio_duration_sec": 6.15,
+    "video_duration_sec": 7.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_mixed_3.mp4"
+  },
+  "claim_mixed_4.mp4": {
+    "source_images": [
+      "003414.jpg",
+      "000687.jpg",
+      "003399.jpg",
+      "002898.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "lamp broken",
+      "scratch"
+    ],
+    "video_type": "mixed_realistic_claim",
+    "narration_style": "distressed",
+    "narration_text": "So, um, this is really frustrating, but, uh, my vehicle has dent, lamp broken, and a scratch. I, um, I just want this resolved quickly, uh, if possible.",
+    "narration_audio_path": "sample_audio/claim_mixed_4.wav",
+    "audio_duration_sec": 6.41,
+    "video_duration_sec": 10.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_mixed_4.mp4"
+  },
+  "claim_mixed_5.mp4": {
+    "source_images": [
+      "003804.jpg",
+      "002090.jpg",
+      "000224.jpg",
+      "000886.jpg",
+      "000088.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "glass shatter",
+      "scratch"
+    ],
+    "video_type": "mixed_realistic_claim",
+    "narration_style": "calm",
+    "narration_text": "Hi, I'm filing a claim for my vehicle. There's crack, glass shatter, and a scratch. It happened yesterday in the parking lot.",
+    "narration_audio_path": "sample_audio/claim_mixed_5.wav",
+    "audio_duration_sec": 7.29,
+    "video_duration_sec": 12.5,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_mixed_5.mp4"
+  },
+  "claim_mixed_6.mp4": {
+    "source_images": [
+      "002448.jpg",
+      "000452.jpg",
+      "001799.jpg",
+      "000565.jpg",
+      "001256.jpg",
+      "001660.jpg"
+    ],
+    "expected_damage_types": [
+      "dent",
+      "glass shatter",
+      "scratch"
+    ],
+    "video_type": "mixed_realistic_claim",
+    "narration_style": "distressed",
+    "narration_text": "I, uh, I'm not really sure what happened exactly, but, um, there's dent, glass shatter, and a scratch now. It's, uh, pretty stressful, honestly.",
+    "narration_audio_path": "sample_audio/claim_mixed_6.wav",
+    "audio_duration_sec": 5.66,
+    "video_duration_sec": 15.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_mixed_6.mp4"
+  },
+  "claim_edge_long_walkaround.mp4": {
+    "source_images": [
+      "002810.jpg",
+      "002448.jpg",
+      "003087.jpg",
+      "003441.jpg",
+      "003994.jpg",
+      "001196.jpg",
+      "002931.jpg",
+      "000670.jpg",
+      "000730.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "dent",
+      "lamp broken",
+      "scratch",
+      "tire flat"
+    ],
+    "video_type": "edge_case_long_walkaround",
+    "narration_style": "calm",
+    "narration_text": "Hi, I'm filing a claim for my vehicle. There's crack, dent, lamp broken, scratch, and a tire flat. It happened yesterday in the parking lot.",
+    "narration_audio_path": "sample_audio/claim_edge_long_walkaround.wav",
+    "audio_duration_sec": 8.55,
+    "video_duration_sec": 18.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_edge_long_walkaround.mp4"
+  },
+  "claim_edge_single_image.mp4": {
+    "source_images": [
+      "000856.jpg"
+    ],
+    "expected_damage_types": [
+      "crack",
+      "scratch"
+    ],
+    "video_type": "edge_case_single_image",
+    "narration_style": "calm",
+    "narration_text": "This is regarding my recent claim. The car has crack, and a scratch. Please let me know the next steps.",
+    "narration_audio_path": "sample_audio/claim_edge_single_image.wav",
+    "audio_duration_sec": 6.14,
+    "video_duration_sec": 4.0,
+    "final_video_with_audio_path": "sample_videos_with_audio/claim_edge_single_image.mp4"
+  }
+}

@@ -1,0 +1,7 @@
+
+train: /kaggle/input/datasets/gabrielfcarvalho/cardd-with-yolo-annotations-images-labels/train/images
+val: /kaggle/input/datasets/gabrielfcarvalho/cardd-with-yolo-annotations-images-labels/val/images
+test: /kaggle/input/datasets/gabrielfcarvalho/cardd-with-yolo-annotations-images-labels/test/images
+
+nc: 6
+names: ['dent', 'scratch', 'crack', 'glass shatter', 'lamp broken', 'tire flat']
