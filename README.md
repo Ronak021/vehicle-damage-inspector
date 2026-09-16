@@ -250,7 +250,13 @@ full pipeline run end to end, including the acoustic stress score. `ground_truth
 documents the known damage for the complete synthetic test set (26 videos), used during
 development to validate detection accuracy — the full set can be regenerated with notebook 02.
 
+## Screenshots
 ![](screenshots/1.png)
+![](screenshots/2.png)
+![](screenshots/3.png)
+![](screenshots/4.png)
+![](screenshots/5.png)
+
 ## Known limitations
 
 - **Part estimation is a heuristic**, not a verified panel-level detection (see above) —
